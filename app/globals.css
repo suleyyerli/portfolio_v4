@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.btn-light {
+  @apply bg-button-light text-buttonText-light;
+}
+
+.btn-dark {
+  @apply bg-button-dark text-buttonText-dark;
+}
+
+/* Pour le fond */
+.bg-light {
+  @apply bg-lightBackground text-lightText;
+}
+
+.bg-dark {
+  @apply bg-darkBackground text-darkText;
+}
+
+.brillance {
+  @apply text-textSpecolor-light dark:text-textSpecolor-dark;
+}
+
+/* Transition fluide sur les changements de thème */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
