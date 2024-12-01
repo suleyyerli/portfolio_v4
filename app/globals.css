@@ -6,6 +6,10 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
+.font-mplus-rounded {
+  font-family: var(--font-mplus-rounded), sans-serif;
+}
+
 .btn-light {
   @apply bg-button-light text-buttonText-light;
 }
@@ -24,7 +28,7 @@ body {
 }
 
 .brillance {
-  @apply text-textSpecolor-light dark:text-textSpecolor-dark;
+  @apply text-textSpecial-light dark:text-textSpecial-dark;
 }
 
 /* Transition fluide sur les changements de thème */

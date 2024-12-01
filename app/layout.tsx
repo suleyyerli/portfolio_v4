@@ -6,10 +6,14 @@ import Espace from "@/components/Espace";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
+const MPlusRounded = localFont({
+  src: "./fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf",
+  variable: "--font-mplus-rounded",
+});
+
 const Inter = localFont({
   src: "./fonts/Inter/static/Inter_18pt-Regular.ttf",
   variable: "--font-inter",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +30,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <head />
       <body
-        className={`${Inter.variable} antialiased bg-light dark:bg-darkBackground text-lightText dark:text-darkText`}
+        className={`${Inter.variable} ${MPlusRounded.variable} font-sans antialiased bg-light dark:bg-darkBackground text-lightText dark:text-darkText`}
       >
         <ThemeProvider
           attribute="class"

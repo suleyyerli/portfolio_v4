@@ -30,9 +30,9 @@ const config: Config = {
           dark: "#81E6D9",
         },
 
-        textSpecolor: {
-          light: "#FF63C3",
-          dark: "#3D7AED",
+        textSpecial: {
+          light: "#3D7AED",
+          dark: "#FF63C3",
         },
       },
     },
