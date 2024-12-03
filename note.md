@@ -7,3 +7,8 @@
 -
 -
 -
+
+hauteur de 216 et une largeur de 384 pixel pour les image
+ou
+
+768x432 pixels

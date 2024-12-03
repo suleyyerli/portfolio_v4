@@ -1,6 +1,7 @@
 "use client";
 
 import CardProject from "@/components/CardProject";
+import { useRouter } from "next/navigation";
 
 const projects = [
   {
@@ -8,29 +9,37 @@ const projects = [
     title: "Projet : UPvote",
     description:
       "Application full-stack, utilisant javascript, NextJS, React, SQLite, Prisma, TailwindCSS, ShadcnUI, Authjs",
-    image: "/projetphoto/projet2.png",
+    image: "/projetphoto/projetupvote.png",
   },
 
   {
     id: 2,
-    title: "Projet : UPvote",
-    description:
-      "Application full-stack, utilisant javascript, NextJS, React, SQLite, Prisma, TailwindCSS, ShadcnUI, Authjs",
-    image: "/projetphoto/projet2.png",
+    title: "Projet : Mobile",
+    description: "Application React-Native, Expo, SQLite.",
+    image: "/projetphoto/projetmobile.png",
   },
 
   {
     id: 3,
-    title: "Projet : UPvote",
+    title: "Projet : Devise",
     description:
-      "Application full-stack, utilisant javascript, NextJS, React, SQLite, Prisma, TailwindCSS, ShadcnUI, Authjs",
-    image: "/projetphoto/projet2.png",
+      "Pour mission en entreprise de retourner le taux de devise en temps réel.",
+    image: "/projetphoto/projetdevise.png",
+  },
+
+  {
+    id: 4,
+    title: "Projet : ERP DIAPASON",
+    description: "Création de requête dans l'ERP Diapason.",
+    image: "/projetphoto/DiapProjet.png",
   },
 ];
 
 export default function Projets() {
+  const router = useRouter();
+
   const handleCardClick = (id: number) => {
-    router.push(`/projets/${id}`);
+    router.push(`/content/projet${id}`);
   };
 
   return (

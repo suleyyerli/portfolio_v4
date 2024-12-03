@@ -22,7 +22,7 @@ export default function Test() {
           <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         </div>
         <Avatar className="w-24 h-24">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src="/autre/avatar2.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
