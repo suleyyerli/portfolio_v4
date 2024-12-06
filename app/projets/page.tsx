@@ -33,6 +33,13 @@ const projects = [
     description: "Création de requête dans l'ERP Diapason.",
     image: "/projetphoto/DiapProjet.png",
   },
+
+  {
+    id: 5,
+    title: "Projet : ERP DIAPASON",
+    description: "Création de requête dans l'ERP Diapason.",
+    image: "/projetphoto/DiapProjet.png",
+  },
 ];
 
 export default function Projets() {

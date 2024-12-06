@@ -41,3 +41,25 @@ html {
     text-wrap: balance;
   }
 }
+
+.bg-scene {
+  background-color: var(--bg-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-scene {
+    --bg-color: rgb(32, 32, 35); /* darkBackground */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-scene {
+    --bg-color: rgb(240, 231, 219); /* lightBackground */
+  }
+}
+
+/* Style pour le header */
+.header {
+  @apply z-50;
+  position: relative;
+}

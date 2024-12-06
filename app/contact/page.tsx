@@ -1,3 +1,3 @@
-export default function Contact() {
+export default function VeilleTechno() {
   return <div>Contact</div>;
 }

@@ -39,7 +39,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="max-w-2xl mx-4 lg:mx-auto">
-            <Header />
+            <header className="header">
+              <Header />
+            </header>
             <main className="max-w-lg mx-auto">
               <Espace />
               <div className="max-w-6xl mx-auto px-4">{children}</div>
