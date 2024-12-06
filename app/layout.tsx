@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Espace from "@/components/Espace";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Model3D from "@/components/Model3D";
 
 const MPlusRounded = localFont({
   src: "./fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf",
@@ -42,9 +43,10 @@ export default function RootLayout({
             <header className="header">
               <Header />
             </header>
-            <main className="max-w-lg mx-auto">
+            <Model3D />
+            <main className="max-w-xl mx-auto">
               <Espace />
-              <div className="max-w-6xl mx-auto px-4">{children}</div>
+              <div className="max-w-xl mx-auto px-4">{children}</div>
               <Espace />
               <Footer />
             </main>
