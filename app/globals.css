@@ -58,12 +58,6 @@ html {
   }
 }
 
-/* Style pour le header */
-.header {
-  @apply z-50;
-  position: relative;
-}
-
 .glass-effect {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);

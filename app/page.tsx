@@ -25,7 +25,7 @@ export default function Test() {
               <h1 className="font-mplus-rounded text-3xl font-bold">
                 Yerli Süleyman
               </h1>
-              <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+              <p>Developpeur Junior ( Fullstack / ERP / )</p>
             </div>
             <Avatar className="w-24 h-24">
               <AvatarImage src="/autre/avatar2.png" />
@@ -52,7 +52,7 @@ export default function Test() {
             <Button className="bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark shadow-none">
               <Link href="/projets">
                 Mon portfolio
-                <ArrowRight className="w-4 h-4 inline" />
+                <ArrowRight className="w-4 h-4 inline animate-spin" />
               </Link>
             </Button>
           </div>
@@ -120,7 +120,7 @@ export default function Test() {
                     <GithubIcon className="w-4 h-4 inline bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark" />
                   </span>{" "}
                   <span className="brillance">Mon github</span>
-                  <ArrowRight className="w-4 h-4 inline" />
+                  <ArrowRight className="w-4 h-4 inline animate-ping" />
                 </Button>
               </Link>
             </li>
@@ -132,7 +132,7 @@ export default function Test() {
                     <DiscordIcon className="w-4 h-4 inline bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark" />
                   </span>{" "}
                   <span className="brillance">Mon discord</span>
-                  <ArrowRight className="w-4 h-4 inline" />
+                  <ArrowRight className="w-4 h-4 inline animate-ping" />
                 </Button>
               </Link>
             </li>
@@ -149,7 +149,7 @@ export default function Test() {
             <Button className="bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark shadow-none">
               <a href="/cv.pdf" download="cv.pdf">
                 CV
-                <ArrowRight className="w-4 h-4 inline" />
+                <ArrowRight className="w-4 h-4 inline animate-bounce" />
               </a>
             </Button>
           </div>

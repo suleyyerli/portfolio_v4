@@ -12,7 +12,7 @@ export default function Projet1() {
   }, [content]);
 
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none p-4">
+    <div className="prose prose-lg dark:prose-invert  p-4">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

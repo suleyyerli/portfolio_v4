@@ -15,7 +15,10 @@ const CardProject: React.FC<CardProjectProps> = ({
   onClick,
 }) => {
   return (
-    <div className="max-w-sm cursor-pointer" onClick={onClick}>
+    <div
+      className="max-w-sm cursor-pointer hover:scale-105 transition-all duration-300"
+      onClick={onClick}
+    >
       <img
         src={image}
         alt="Project"
