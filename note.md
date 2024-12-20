@@ -13,3 +13,6 @@ ou
 
 768x432 pixels
 lightBackground: "rgb(240, 231, 219)",
+
+--bg-color: rgb(240, 231, 219); /_ lightBackground _/
+darkBackground: "rgb(32,32,35)",

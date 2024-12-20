@@ -34,7 +34,7 @@ Tailwind CSS est un framework de style CSS utilitaire qui permet de créer des i
 
 ### La Stack
 
-<img src ="img/stacklogo.png" alt="La Stack">
+![La Stack](img/stacklogo.png)
 
 ## Établir la Problématique
 
@@ -77,10 +77,10 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
 ### Diagramme de Cas d'Utilisation
 
 - Cas d'utilisation pour l'utilisateur:
-  <img src ="img/casUser.png" alt="Diagramme de Cas d'Utilisation">
+  ![Diagramme de Cas d'Utilisation](img/casUser.png)
 
 - Cas d'utilisation pour l'administrateur:
-  <img src ="img/casAdmin.png" alt="Diagramme de Cas d'Utilisation">
+  ![Diagramme de Cas d'Utilisation](img/casAdmin.png)
 
 #### Catégories/Types d'Utilisateurs
 
@@ -136,22 +136,22 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Boutons primaires et secondaires avec différentes couleurs et styles pour les actions principales et secondaires.
    - Boutons avec des icônes pour une meilleure compréhension des actions.
 
-   <img src="img/Bouton1.png" alt="Boutons">
-   <img src="img/Bouton2.png" alt="Boutons">
+   ![Boutons](img/Bouton1.png)
+   ![Boutons](img/Bouton2.png)
 
 2. **Affichage des Posts**
 
    - Cartes pour afficher les posts et les propositions, avec des bordures et des ombres légères pour une meilleure lisibilité.
    - Utilisation de padding et de marges pour espacer les éléments de manière harmonieuse.
 
-   <img src="img/PostCard.png" alt="Post">
+   ![Post](img/PostCard.png)
 
 3. **Navigation**
 
    - Barre de navigation avec des liens vers les différentes sections de l'application, stylisée pour être claire et accessible.
    - Indicateurs visuels pour montrer la page active et faciliter la navigation.
 
-   <img src="img/Header.png" alt="Navigation">
+   ![Navigation](img/Header.png)
 
 ## Wireframe
 
@@ -161,15 +161,15 @@ Voici le wireframe de la structure global de mon application.
 Squelette de l'application:
 </div>
 
-<img src="img/Wireframe.png" alt="Wireframe">
+![Wireframe](img/Wireframe.png)
 
 ## Planification de la Réalisation
 
-<img src="img/planification.png" alt="Planification">
+![Planification](img/planification.png)
 
 ## Dictionnaire de Données
 
-<img src="img/schemaDB.png" alt="Dictionnaire de Données">
+![Dictionnaire de Données](img/schemaDB.png)
 
 ### Modèle PRISMA:
 

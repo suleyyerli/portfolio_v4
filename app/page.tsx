@@ -7,19 +7,19 @@ import { Heart } from "lucide-react";
 import { Code } from "lucide-react";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { DiscordIcon } from "@/icons/DiscordIcon";
-
+import { AppleIcon } from "@/icons/AppleIcon";
 export default function Test() {
   return (
     <div className="mx-auto relative p-6">
       {/* Carte de bienvenue */}
-      <Card className="p-3 rounded-lg text-center shadow-none glass-effect border-none mb-6">
+      <Card className="rounded-lg text-center shadow-none border-none mb-6 style-card">
         Hello, je suis developpeur fullstack à Strasbourg!
       </Card>
 
       {/* Layout en grille */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Section Profile */}
-        <Card className="p-6 hover:-translate-y-1 transition-all md:col-span-2 glass-effect border-none">
+        <Card className=" hover:-translate-y-1 transition-all md:col-span-2 style-card">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="font-mplus-rounded text-3xl font-bold">
@@ -35,8 +35,8 @@ export default function Test() {
         </Card>
 
         {/* Section Description */}
-        <Card className="p-6 hover:-translate-y-1 transition-all md:col-span-2 glass-effect border-none">
-          <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30">
+        <Card className=" hover:-translate-y-1 transition-all md:col-span-2 style-card">
+          <h2 className="font-mplus-rounded text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             Description
           </h2>
           <p>
@@ -59,8 +59,8 @@ export default function Test() {
         </Card>
 
         {/* Section Bio */}
-        <Card className="p-6 hover:-translate-y-1 transition-all glass-effect border-none">
-          <h2 className="text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30 font-mplus-rounded">
+        <Card className=" hover:-translate-y-1 transition-all style-card">
+          <h2 className="text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             Bio
           </h2>
           <ul>
@@ -97,8 +97,8 @@ export default function Test() {
         </Card>
 
         {/* Section J'aime */}
-        <Card className="p-6 hover:-translate-y-1 transition-all glass-effect border-none">
-          <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30">
+        <Card className=" hover:-translate-y-1 transition-all style-card">
+          <h2 className="font-mplus-rounded text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             J&apos; <Heart className="w-4 h-4 inline" />
           </h2>
           <p>
@@ -107,9 +107,18 @@ export default function Test() {
           </p>
         </Card>
 
+        {/* Section Mes logiciels de choix */}
+        <Card className=" hover:-translate-y-1 transition-all md:col-span-2 style-card">
+          <h2 className="font-mplus-rounded text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
+            Mes logiciels de choix
+          </h2>
+          <span></span>
+          <div className="flex justify-center mt-2"></div>
+        </Card>
+
         {/* Section Web */}
-        <Card className="p-6 hover:-translate-y-1 transition-all glass-effect border-none">
-          <h2 className="text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30 font-mplus-rounded">
+        <Card className=" hover:-translate-y-1 transition-all style-card">
+          <h2 className="text-lg font-bold mb-2 border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             Web <Code className="w-4 h-4 inline" />
           </h2>
           <ul>
@@ -117,7 +126,7 @@ export default function Test() {
               <Link href="https://github.com/suleyyerli">
                 <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
                   <span className="font-mplus-rounded font-bold">
-                    <GithubIcon className="w-4 h-4 inline bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark" />
+                    <GithubIcon className="w-4 h-4 inline  dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark" />
                   </span>{" "}
                   <span className="brillance">Mon github</span>
                   <ArrowRight className="w-4 h-4 inline animate-ping" />
@@ -140,8 +149,8 @@ export default function Test() {
         </Card>
 
         {/* Section CV */}
-        <Card className="p-6 hover:-translate-y-1 transition-all glass-effect border-none">
-          <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30">
+        <Card className=" hover:-translate-y-1 transition-all style-card">
+          <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             Télécharger mon CV
           </h2>
 

@@ -6,7 +6,7 @@ export default function Projet1() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch("/markdown/Projet1/upvote.md")
+    fetch("/markdown/Projet4/tp_diapason.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
@@ -17,7 +17,7 @@ export default function Projet1() {
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {
-              const imagePath = src?.replace("img/", "/markdown/Projet1/img/");
+              const imagePath = src?.replace("img/", "/markdown/Projet4/img/");
               return (
                 <img
                   src={imagePath}

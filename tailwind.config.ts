@@ -11,14 +11,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        lightBackground: "rgb(240, 231, 219)",
-        darkBackground: "rgb(32,32,35)",
+        lightBackground: "rgb(255, 255, 255)",
+        darkBackground: "rgb(20,20,20)",
 
         lightText: "#1A202C",
         darkText: "#FFFFFFEB",
 
         button: {
-          light: "#319795",
+          light: "#1F883D",
           dark: "#81E6D9",
         },
         buttonText: {
@@ -32,7 +32,7 @@ const config: Config = {
         },
 
         textSpecial: {
-          light: "#3D7AED",
+          light: "#0969DA",
           dark: "#FF63C3",
         },
       },
