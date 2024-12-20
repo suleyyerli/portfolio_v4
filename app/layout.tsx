@@ -44,12 +44,11 @@ export default function RootLayout({
               <Header />
             </header>
             <Model3D />
-            <main className="max-w-xl mx-auto">
-              <Espace />
-              <div className="max-w-xl mx-auto px-4">{children}</div>
-              <Espace />
-              <Footer />
-            </main>
+
+            <Espace />
+            <div className="max-w-xl mx-auto px-4">{children}</div>
+            <Espace />
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

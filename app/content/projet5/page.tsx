@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-export default function Projet3() {
+export default function Projet5() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch("/markdown/Projet3/devise.md")
+    fetch("/markdown/Projet5/tousportfolio.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
@@ -17,7 +17,7 @@ export default function Projet3() {
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {
-              const imagePath = src?.replace("img/", "/markdown/Projet3/img/");
+              const imagePath = src?.replace("img/", "/markdown/Projet5/img/");
               return (
                 <img
                   src={imagePath}

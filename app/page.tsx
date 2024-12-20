@@ -7,10 +7,10 @@ import { Heart } from "lucide-react";
 import { Code } from "lucide-react";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { DiscordIcon } from "@/icons/DiscordIcon";
-import { AppleIcon } from "@/icons/AppleIcon";
+
 export default function Test() {
   return (
-    <div className="mx-auto relative p-6">
+    <div className="mx-auto relative">
       {/* Carte de bienvenue */}
       <Card className="rounded-lg text-center shadow-none border-none mb-6 style-card">
         Hello, je suis developpeur fullstack à Strasbourg!

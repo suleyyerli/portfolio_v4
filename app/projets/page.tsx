@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const projects = [
   {
     id: 1,
-    title: "Projet : UPvote",
+    title: "UPvote",
     description:
       "Application full-stack, utilisant javascript, NextJS, React, SQLite, Prisma, TailwindCSS, ShadcnUI, Authjs",
     image: "/projetphoto/projetupvote.png",
@@ -14,14 +14,14 @@ const projects = [
 
   {
     id: 2,
-    title: "Projet : Mobile",
+    title: "Mobile",
     description: "Application React-Native, Expo, SQLite.",
     image: "/projetphoto/projetmobile.png",
   },
 
   {
     id: 3,
-    title: "Projet : Devise",
+    title: "Devise",
     description:
       "Pour mission en entreprise de retourner le taux de devise en temps réel.",
     image: "/projetphoto/projetdevise.png",
@@ -29,9 +29,17 @@ const projects = [
 
   {
     id: 4,
-    title: "Projet : ERP DIAPASON",
+    title: "ERP DIAPASON",
     description: "Création de requête dans l'ERP Diapason.",
     image: "/projetphoto/DiapProjet.png",
+  },
+
+  {
+    id: 5,
+    title: "Réalisation de portfolio",
+    description:
+      "Création de portfolio durant ma formation en tant que développeur fullstack.",
+    image: "/projetphoto/exportfolio.png",
   },
 ];
 
