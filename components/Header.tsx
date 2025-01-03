@@ -40,7 +40,7 @@ export default function Header() {
                 isActivePath("/") ? "brillance" : ""
               }`}
             >
-              home
+              acceuil
             </Link>
           </Badge>
           <Badge className="hover:xl:scale-150 transition-all duration-300">
@@ -60,7 +60,7 @@ export default function Header() {
                 isActivePath("/veilletechno") ? "brillance" : ""
               }`}
             >
-              veille technologique
+              veilles
             </Link>
           </Badge>
           <Badge className="hover:xl:scale-150 transition-all duration-300">

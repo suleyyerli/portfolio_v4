@@ -7,6 +7,13 @@ import { Heart } from "lucide-react";
 import { Code } from "lucide-react";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { DiscordIcon } from "@/icons/DiscordIcon";
+import { Download } from "lucide-react";
+import { AppleIcon } from "@/icons/AppleIcon";
+import { DockerIcon } from "@/icons/DockerIcon";
+import { BraveIcon } from "@/icons/BraveIcon";
+import { SpotifyIcon } from "@/icons/SpotifyIcon";
+import { Badge } from "@/components/ui/badge";
+import { VscodeIcon } from "@/icons/VscodeIcon";
 
 export default function Test() {
   return (
@@ -112,8 +119,33 @@ export default function Test() {
           <h2 className="font-mplus-rounded text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
             Mes logiciels de choix
           </h2>
-          <span></span>
-          <div className="flex justify-center mt-2"></div>
+          <div className="flex justify-center">
+            <div className="flex gap-2 p-4 ">
+              <Badge variant="outline" className="style-badge flex">
+                <SpotifyIcon size={40} />
+              </Badge>
+
+              <Badge variant="outline" className="style-badge flex">
+                <AppleIcon size={40} />
+              </Badge>
+
+              <Badge variant="outline" className="style-badge flex">
+                <BraveIcon size={40} />
+              </Badge>
+
+              <Badge variant="outline" className="style-badge flex">
+                <DockerIcon size={40} />
+              </Badge>
+
+              <Badge variant="outline" className="style-badge flex">
+                <DiscordIcon size={40} />
+              </Badge>
+              <Badge variant="outline" className="style-badge flex">
+                <VscodeIcon size={40} />
+              </Badge>
+              {/* Ajoutez d'autres icônes SVG ici */}
+            </div>
+          </div>
         </Card>
 
         {/* Section Web */}
@@ -158,7 +190,7 @@ export default function Test() {
             <Button className="bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark shadow-none">
               <a href="/cv.pdf" download="cv.pdf">
                 CV
-                <ArrowRight className="w-4 h-4 inline animate-bounce" />
+                <Download className="w-4 h-4 inline animate-bounce" />
               </a>
             </Button>
           </div>
