@@ -120,7 +120,7 @@ export default function Test() {
             Mes logiciels de choix
           </h2>
           <div className="flex justify-center">
-            <div className="flex gap-2 p-4 ">
+            <div className="flex gap-2 ">
               <Badge variant="outline" className="style-badge flex">
                 <SpotifyIcon size={40} />
               </Badge>
@@ -145,6 +145,52 @@ export default function Test() {
               </Badge>
               {/* Ajoutez d'autres icônes SVG ici */}
             </div>
+          </div>
+        </Card>
+
+        {/* Section Compétences */}
+        <Card className=" hover:-translate-y-1 transition-all md:col-span-2 style-card">
+          <h2 className="font-mplus-rounded text-lg font-bold mb-2  border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
+            Compétences
+          </h2>
+          <div>
+            <ul className="flex flex-wrap gap-2">
+              <li>
+                <Badge className="bg-[#fcd35e]  dark:text-buttonText-dark  ">
+                  Javascript
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#0083f0]  dark:text-buttonText-dark">
+                  React
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#b2babb]  dark:text-buttonText-dark">
+                  Next.js
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#0083f0]  dark:text-buttonText-dark">
+                  Docker
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#b2babb]/50  dark:text-buttonText-dark">
+                  Github
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#dd4814]  dark:text-buttonText-dark">
+                  Linux
+                </Badge>
+              </li>
+              <li>
+                <Badge className="bg-[#58d68d]  dark:text-buttonText-dark">
+                  SQL
+                </Badge>
+              </li>
+            </ul>
           </div>
         </Card>
 
