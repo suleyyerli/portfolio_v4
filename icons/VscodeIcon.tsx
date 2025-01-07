@@ -23,7 +23,7 @@ export const VscodeIcon = (
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-420.000000, -7519.000000)"
-          fill="#8caaee "
+          fill="#FAFAFA"
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

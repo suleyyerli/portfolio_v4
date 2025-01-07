@@ -1,21 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Espace from "@/components/Espace";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import Model3D from "@/components/Model3D";
-
-const MPlusRounded = localFont({
-  src: "./fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf",
-  variable: "--font-mplus-rounded",
-});
-
-const Inter = localFont({
-  src: "./fonts/Inter/static/Inter_18pt-Regular.ttf",
-  variable: "--font-inter",
-});
+import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,27 +18,16 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head />
-      <body
-        className={`${Inter.variable} ${MPlusRounded.variable} font-sans antialiased bg-light dark:bg-darkBackground text-lightText dark:text-darkText`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="max-w-2xl mx-4 lg:mx-auto">
-            <header className="header">
-              <Header />
-            </header>
-            <Model3D />
-
-            <Espace />
-            <div className="max-w-xl mx-auto px-4">{children}</div>
-            <Espace />
-            <Footer />
-          </div>
-        </ThemeProvider>
+      <body className="antialiased font-geistSans bg-black">
+        <div className="max-w-2xl mx-4 lg:mx-auto">
+          <header className="header">
+            <Header />
+          </header>
+          <Espace />
+          <div className="max-w-8xl mx-auto px-4">{children}</div>
+          <Espace />
+          <Footer />
+        </div>
       </body>
     </html>
   );

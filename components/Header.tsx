@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
@@ -26,9 +25,7 @@ export default function Header() {
   return (
     <div
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-lightBackground/30 dark:bg-darkBackground/30 backdrop-blur-sm"
-          : "bg-transparent"
+        isScrolled ? "backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <div className="max-w-2xl mx-2 lg:mx-auto">
@@ -36,44 +33,43 @@ export default function Header() {
           <Badge className="hover:xl:scale-150 transition-all duration-300">
             <Link
               href="/"
-              className={`font-bold hover:brillance transition-colors ${
-                isActivePath("/") ? "brillance" : ""
+              className={`font-bold transition-colors text-[#d1d5db] ${
+                isActivePath("/") ? "text-white" : ""
               }`}
             >
-              acceuil
+              Acceuil
             </Link>
           </Badge>
           <Badge className="hover:xl:scale-150 transition-all duration-300">
             <Link
               href="/projets"
-              className={`font-bold hover:brillance transition-colors ${
-                isActivePath("/projets") ? "brillance" : ""
+              className={`font-bold transition-colors text-[#d1d5db] ${
+                isActivePath("/projets") ? "text-white" : ""
               }`}
             >
-              projets
+              Projets
             </Link>
           </Badge>
           <Badge className="hover:xl:scale-150 transition-all duration-300">
             <Link
               href="/veilletechno"
-              className={`font-bold hover:brillance transition-colors ${
-                isActivePath("/veilletechno") ? "brillance" : ""
+              className={`font-bold transition-colors text-[#d1d5db] ${
+                isActivePath("/veilletechno") ? "text-white" : ""
               }`}
             >
-              veilles
+              Veilles
             </Link>
           </Badge>
           <Badge className="hover:xl:scale-150 transition-all duration-300">
             <Link
               href="/contact"
-              className={` font-bold hover:brillance transition-colors ${
-                isActivePath("/contact") ? "brillance" : ""
+              className={` font-bold transition-colors text-[#d1d5db] ${
+                isActivePath("/contact") ? "text-white" : ""
               }`}
             >
-              contact
+              Contact
             </Link>
           </Badge>
-          <ThemeToggle />
         </nav>
       </div>
     </div>

@@ -321,7 +321,7 @@ model Vote {
 
 Next.js est un framework React qui permet de créer des applications web performantes en utilisant des composants serveur et client. Comprendre quand et comment utiliser ces composants est essentiel pour optimiser votre application.
 
-#### Composants Serveur
+#### Composants Serveur / Client ?
 
 ##### Qu'est-ce qu'un Composant Serveur ?
 

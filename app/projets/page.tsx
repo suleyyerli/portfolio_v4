@@ -2,6 +2,7 @@
 
 import CardProject from "@/components/CardProject";
 import { useRouter } from "next/navigation";
+import Espace from "@/components/Espace";
 
 const projects = [
   {
@@ -52,9 +53,8 @@ export default function Projets() {
 
   return (
     <div>
-      <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30 ">
-        Projets
-      </h2>
+      <Espace />
+      <h2 className="text-lg font-bold mb-2 inline-block">Projets</h2>
       <div className="mt-4 "></div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project) => (

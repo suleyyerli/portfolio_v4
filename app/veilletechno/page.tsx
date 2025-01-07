@@ -4,6 +4,7 @@ import CardVeille from "@/components/CardVeille";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Espace from "@/components/Espace";
 
 const veilleTechno = [
   {
@@ -29,7 +30,8 @@ export default function Projets() {
 
   return (
     <div>
-      <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30 ">
+      <Espace />
+      <h2 className="text-lg font-bold mb-2 inline-block">
         Veille technologique
       </h2>
       <div className="mt-4 "></div>
@@ -43,15 +45,15 @@ export default function Projets() {
         ))}
       </div>
       <div className="mt-4">
-        <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block border-lightText/80 dark:border-darkText/30 ">
+        <h2 className="text-lg font-bold mb-2 inline-block">
           Mes sources sont :
         </h2>
         <h2 className="mt-4 font-bold text-xl">Développement :</h2>
         <ul className="flex flex-col">
           <li>
             <Link href="https://www.youtube.com/@Micode">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
                 <span className="brillance">
                   https://www.youtube.com/@Micode
                 </span>
@@ -62,8 +64,8 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.youtube.com/@Underscore_">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
                 <span className="brillance">
                   https://www.youtube.com/@Underscore_
                 </span>
@@ -74,8 +76,8 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.youtube.com/@melvynxdev">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
                 <span className="brillance">
                   https://www.youtube.com/@melvynxdev
                 </span>
@@ -88,11 +90,9 @@ export default function Projets() {
           </h2>
           <li>
             <Link href="https://www.youtube.com/@cocadmin">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.youtube.com/@cocadmin
-                </span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.youtube.com/@cocadmin</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -100,11 +100,9 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.youtube.com/@TechSama">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.youtube.com/@TechSama
-                </span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.youtube.com/@TechSama</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -114,10 +112,8 @@ export default function Projets() {
           <li>
             <Link href="https://www.lemonde.fr/cybercriminalite/">
               <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.lemonde.fr/cybercriminalite/
-                </span>
+                <span className="font-bold"></span>{" "}
+                <span>https://www.lemonde.fr/cybercriminalite/</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -126,7 +122,7 @@ export default function Projets() {
           <li>
             <Link href="https://www.ibm.com/fr-fr/topics/docker">
               <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
+                <span className="font-bold"></span>{" "}
                 <span className="brillance">
                   https://www.ibm.com/fr-fr/topics/docker
                 </span>
@@ -137,9 +133,9 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.it-connect.fr/">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">https://www.it-connect.fr/</span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.it-connect.fr/</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -147,11 +143,9 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.lemondeinformatique.fr/">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.lemondeinformatique.fr/
-                </span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.lemondeinformatique.fr/</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -160,11 +154,9 @@ export default function Projets() {
           <h2 className="mt-4 font-bold text-xl">Cybersecurité :</h2>
           <li>
             <Link href="https://www.youtube.com/@wakedxy">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.youtube.com/@wakedxy
-                </span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.youtube.com/@wakedxy</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>
@@ -172,11 +164,9 @@ export default function Projets() {
 
           <li>
             <Link href="https://www.lemonde.fr/cybercriminalite/">
-              <Button className="p-0 shadow-none dark:hover:bg-button-light/30 hover:bg-button-dark/30">
-                <span className="font-mplus-rounded font-bold"></span>{" "}
-                <span className="brillance">
-                  https://www.lemonde.fr/cybercriminalite/
-                </span>
+              <Button className="p-0 shadow-none">
+                <span className="font-bold"></span>{" "}
+                <span>https://www.lemonde.fr/cybercriminalite/</span>
                 <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Link>

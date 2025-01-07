@@ -5,24 +5,24 @@ import { Download } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Card className="style-card">
+    <Card className="mt-10">
       <div className="flex justify-center mt-2 flex-col">
-        <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
+        <h2 className="text-lg font-bold mb-2 inline-block">
           Télécharger mon CV
         </h2>
 
-        <Button className="bg-button-light dark:bg-button-dark text-buttonText-light dark:text-buttonText-dark shadow-none">
+        <Button>
           <a href="/cv.pdf" download="cv.pdf">
             CV
             <Download className="w-4 h-4 inline animate-bounce" />
           </a>
         </Button>
 
-        <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
+        <h2 className="text-lg font-bold mb-2 inline-block">
           Mon adresse email
         </h2>
-        <p className="brillance">suley.yerli@gmail.com</p>
-        <h2 className="font-mplus-rounded text-lg font-bold mb-2 border-b-4 inline-block  text-[#0969DA] dark:text-darkText">
+        <p>suley.yerli@gmail.com</p>
+        <h2 className="text-lg font-bold mb-2 inline-block">
           Mon numéro de téléphone
         </h2>
         <p className="brillance">+33 6 14 92 46 21</p>

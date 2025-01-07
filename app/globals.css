@@ -3,106 +3,16 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-inter), sans-serif;
-}
-
-.font-mplus-rounded {
-  font-family: var(--font-mplus-rounded), sans-serif;
-}
-
-.btn-light {
-  @apply bg-button-light text-buttonText-light;
-}
-
-.btn-dark {
-  @apply bg-button-dark text-buttonText-dark;
-}
-
-/* Pour le fond */
-.bg-light {
-  @apply bg-lightBackground text-lightText;
-}
-
-.bg-dark {
-  @apply bg-darkBackground text-darkText;
-}
-
-.brillance {
-  @apply text-textSpecial-light dark:text-textSpecial-dark;
-}
-
-/* Transition fluide sur les changements de thème */
-html {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  font-family: var(--font-geistSans), sans-serif;
+  h1 {
+    color: #fafafa;
   }
-}
-
-.bg-scene {
-  background-color: var(--bg-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .bg-scene {
-    --bg-color: rgb(32, 32, 35); /* darkBackground */
+  h2 {
+    color: #d1d5db;
   }
-}
-
-@media (prefers-color-scheme: light) {
-  .bg-scene {
-    --bg-color: rgb(255, 255, 255); /* lightBackground */
+  p {
+    color: #9ca3af;
   }
-}
-
-.glass-effect {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-}
-
-.style-card {
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  background-color: var(--card-bg);
-  color: var(--card-text);
-}
-
-.style-card:hover {
-  transform: translateY(-2px);
-}
-
-:root {
-  --card-bg-light: #ffffff;
-  --card-text-light: #000000;
-  --card-bg-dark: #1a1a1a;
-  --card-text-dark: #ffffff;
-  --card-border-light: #d1d9e0;
-  --card-border-dark: rgba(255, 255, 255, 0.1);
-}
-
-.style-card {
-  background-color: var(--card-bg);
-  color: var(--card-text);
-  border: 1px solid var(--card-border);
-}
-
-.light .style-card {
-  --card-bg: var(--card-bg-light);
-  --card-text: var(--card-text-light);
-  --card-border: var(--card-border-light);
-}
-
-.dark .style-card {
-  --card-bg: var(--card-bg-dark);
-  --card-text: var(--card-text-dark);
-  --card-border: var(--card-border-dark);
 }
 
 /* Styles personnalisés pour le markdown */
