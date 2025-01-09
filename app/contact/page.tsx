@@ -1,17 +1,17 @@
 "use client";
-import { Card } from "@/components/ui/card";
+import CustomCard from "@/components/customCard";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Card className="mt-10">
+    <CustomCard className="mt-10">
       <div className="flex justify-center mt-2 flex-col">
         <h2 className="text-lg font-bold mb-2 inline-block">
           Télécharger mon CV
         </h2>
 
-        <Button>
+        <Button className="hover:bg-zinc-900 bg-zinc-800">
           <a href="/cv.pdf" download="cv.pdf">
             CV
             <Download className="w-4 h-4 inline animate-bounce" />
@@ -25,8 +25,8 @@ export default function Contact() {
         <h2 className="text-lg font-bold mb-2 inline-block">
           Mon numéro de téléphone
         </h2>
-        <p className="brillance">+33 6 14 92 46 21</p>
+        <p>+33 6 14 92 46 21</p>
       </div>
-    </Card>
+    </CustomCard>
   );
 }

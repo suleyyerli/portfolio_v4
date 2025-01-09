@@ -13,6 +13,18 @@ body {
   p {
     color: #9ca3af;
   }
+  ul {
+    color: #9ca3af;
+  }
+}
+
+@keyframes border-beam {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
 }
 
 /* Styles personnalisés pour le markdown */

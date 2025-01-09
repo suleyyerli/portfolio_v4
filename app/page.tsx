@@ -4,12 +4,11 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+
 import { Heart } from "lucide-react";
 import { Code } from "lucide-react";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { DiscordIcon } from "@/icons/DiscordIcon";
-import { Download } from "lucide-react";
 import { AppleIcon } from "@/icons/AppleIcon";
 import { DockerIcon } from "@/icons/DockerIcon";
 import { BraveIcon } from "@/icons/BraveIcon";
@@ -18,26 +17,10 @@ import { Badge } from "@/components/ui/badge";
 import { VscodeIcon } from "@/icons/VscodeIcon";
 import Espace from "@/components/Espace";
 import { Separator } from "@/components/ui/separator";
-import { useEffect } from "react";
+import { ArrowUpRight } from "lucide-react";
+import CustomCard from "@/components/CustomCard";
 
-export default function Test() {
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card-hover");
-
-    cards.forEach((card) => {
-      card.addEventListener("mousemove", (e) => {
-        const event = e as MouseEvent;
-        const element = card as HTMLElement;
-        const rect = element.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-
-        element.style.setProperty("--mouse-x", `${x}px`);
-        element.style.setProperty("--mouse-y", `${y}px`);
-      });
-    });
-  }, []);
-
+export default function Accueil() {
   return (
     <div className="mx-auto relative">
       <Espace />
@@ -46,7 +29,7 @@ export default function Test() {
       {/* Layout en grille */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Section Profile */}
-        <Card className="card-hover relative rounded-sm border border-zinc-800 p-3 md:col-span-2 before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
+        <Card className="card-hover relative rounded-sm border border-zinc-800 p-3 md:col-span-2 ">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold">Yerli Süleyman</h1>
@@ -60,10 +43,10 @@ export default function Test() {
         </Card>
 
         {/* Section Description */}
-        <div className="transition-all md:col-span-2">
-          <h2 className="text-lg font-medium mb-2 inline-block">Description</h2>
+        <div className=" md:col-span-2">
+          <h2 className="text-lg font-medium mb-2">Description</h2>
           <Separator className="bg-zinc-800 my-2" />
-          <p className="text-sm">
+          <p className="text-base">
             Je suis étudiant en alternance en{" "}
             <span className="font-medium text-[#FAFAFA]">BTS SIO</span>{" "}
             spécialisé en{" "}
@@ -75,18 +58,18 @@ export default function Test() {
             <span className="font-medium text-[#FAFAFA]">ERP</span>.
           </p>
           <div className="flex justify-center mt-2">
-            <Button>
+            <Button className="bg-zinc-900 text-[#FAFAFA]">
               <Link href="/projets">
                 Mon portfolio
-                <ArrowRight className="w-4 h-4 inline animate-spin" />
+                <ArrowUpRight className="w-4 h-4 inline animate-bounce" />
               </Link>
             </Button>
           </div>
         </div>
 
         {/* Section Bio */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 transition-all group hover:-translate-y-1 before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
-          <h2 className="text-lg font-medium mb-2 inline-block">Bio</h2>
+        <CustomCard>
+          <h2 className="text-lg font-medium mb-2">Bio</h2>
           <ul className="text-sm">
             <li>
               <p>
@@ -117,22 +100,21 @@ export default function Test() {
               </p>
             </li>
           </ul>
-        </Card>
+        </CustomCard>
 
         {/* Section J'aime */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 hover:-translate-y-1 transition-all before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
-          <h2 className="text-lg font-medium mb-2 inline-block ">
+        <CustomCard className="">
+          <h2 className="text-lg font-medium mb-2">
             J&apos; <Heart className="w-4 h-4 inline" />
           </h2>
           <p className="text-sm">
-            Sport, <span className="brillance">Voyage</span>, Gaming,{" "}
-            <span className="brillance">Programmation</span>, Ski,{" "}
-            <span className="brillance">Musique</span>
+            Sport, Voyage, Gaming, Programmation, Ski, Musique , Lord of the
+            Rings, Harry Potter, Animes, Manga,
           </p>
-        </Card>
+        </CustomCard>
 
         {/* Section Mes logiciels de choix */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 hover:-translate-y-1 transition-all md:col-span-2 before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
+        <div className=" p-3 md:col-span-2 ">
           <h2 className="text-lg font-medium mb-2 inline-block">
             Mes logiciels de choix
           </h2>
@@ -152,87 +134,84 @@ export default function Test() {
               <VscodeIcon size={40} />
             </div>
           </div>
-        </Card>
+        </div>
 
         {/* Section Compétences */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 hover:-translate-y-1 transition-all md:col-span-2 before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
-          <h2 className="text-lg font-medium mb-2 inline-block ">
-            Compétences
-          </h2>
+        <CustomCard>
+          <h2 className="text-lg font-medium mb-2">Compétences</h2>
           <div>
             <ul className="flex flex-wrap gap-2 text-sm">
               <li>
-                <Badge className="bg-[#fcd35e]">Javascript</Badge>
+                <Badge className=" border-[#fcd35e]">Javascript</Badge>
+              </li>
+
+              <li>
+                <Badge className="border-[#0083f0]">React</Badge>
               </li>
               <li>
-                <Badge className="bg-[#0083f0]">React</Badge>
+                <Badge className="border-[#b2babb]">Next.js</Badge>
               </li>
               <li>
-                <Badge className="bg-[#b2babb]">Next.js</Badge>
+                <Badge className="border-[#0083f0]">Docker</Badge>
               </li>
               <li>
-                <Badge className="bg-[#0083f0]">Docker</Badge>
+                <Badge className="border-[#b2babb]/50">Github</Badge>
               </li>
               <li>
-                <Badge className="bg-[#b2babb]/50">Github</Badge>
+                <Badge className="border-[#dd4814]">Linux</Badge>
               </li>
               <li>
-                <Badge className="bg-[#dd4814]">Linux</Badge>
-              </li>
-              <li>
-                <Badge className="bg-[#58d68d]">SQL</Badge>
+                <Badge className="border-[#58d68d]">SQL</Badge>
               </li>
             </ul>
           </div>
-        </Card>
+        </CustomCard>
 
         {/* Section Web */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 hover:-translate-y-1 transition-all before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
-          <h2 className="text-lg font-medium mb-2 inline-block ">
+        <CustomCard>
+          <h2 className="text-lg font-medium mb-2">
             Web <Code className="w-4 h-4 inline" />
           </h2>
           <ul>
             <li>
               <Link href="https://github.com/suleyyerli">
-                <Button>
+                <Button className="hover:bg-zinc-900">
                   <span className=" font-medium">
                     <GithubIcon className="w-4 h-4 inline" />
                   </span>{" "}
                   <p>Mon github</p>
-                  <ArrowRight className="w-4 h-4 inline animate-ping" />
+                  <ArrowUpRight className="w-4 h-4 inline animate-bounce text-[#000000]" />
                 </Button>
               </Link>
             </li>
 
             <li>
               <Link href="https://discord.gg/suleyyerli">
-                <Button>
+                <Button className="hover:bg-zinc-900">
                   <span className=" font-medium">
                     <DiscordIcon className="w-4 h-4 inline" />
                   </span>{" "}
                   <p>Mon discord</p>
-                  <ArrowRight className="w-4 h-4 inline animate-ping" />
+                  <ArrowUpRight className="w-4 h-4 inline animate-bounce text-[#000000]" />
                 </Button>
               </Link>
             </li>
           </ul>
-        </Card>
+        </CustomCard>
 
         {/* Section CV */}
-        <Card className="card-hover relative rounded-2xl border border-zinc-900 p-3 hover:-translate-y-1 transition-all before:absolute before:w-[200px] before:h-[200px] before:bg-zinc-400/40 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity hover:before:opacity-100 before:blur-3xl before:[transform:translate(calc(var(--mouse-x,0)-100px),calc(var(--mouse-y,0)-100px))] before:[transition:transform_0.1s] overflow-hidden">
-          <h2 className="text-lg font-bold mb-2 inline-block ">
-            Télécharger mon CV
-          </h2>
+        <CustomCard>
+          <h2 className="text-lg font-bold mb-2">Télécharger mon CV</h2>
 
           <div className="flex justify-center mt-2">
             <Button className="bg-[#FAFAFA] text-[#000000]">
               <a href="/cv.pdf" download="cv.pdf">
                 CV
-                <Download className="w-4 h-4 inline animate-bounce" />
+                <ArrowUpRight className="w-4 h-4 inline animate-bounce" />
               </a>
             </Button>
           </div>
-        </Card>
+        </CustomCard>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import CustomCard from "./CustomCard";
 
 interface CardProjectProps {
   id: number;
@@ -15,23 +16,18 @@ const CardProject: React.FC<CardProjectProps> = ({
   onClick,
 }) => {
   return (
-    <div
-      className="max-w-sm cursor-pointer hover:scale-105 transition-all duration-300"
-      onClick={onClick}
-    >
+    <CustomCard onClick={onClick} className="cursor-pointer">
       <img
         src={image}
         alt="Project"
-        className="w-full object-cover rounded-xl"
-        style={{ width: "384px", height: "190px" }}
+        className="object-cover rounded-xl"
+        style={{ width: "300px", height: "150px" }}
       />
-      <div className="p-4 text-center">
-        <p className="text-xl text-lightText dark:text-darkText">{title}</p>
-        <p className="text-sm text-lightText dark:text-darkText">
-          {description}
-        </p>
+      <div className="p-4">
+        <h2 className="text-lg font-medium mb-2">{title}</h2>
+        <p className="text-sm">{description}</p>
       </div>
-    </div>
+    </CustomCard>
   );
 };
 

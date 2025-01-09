@@ -1,5 +1,6 @@
 import React from "react";
 import { Folder } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 interface CardVeilleProps {
   id: number;
@@ -15,13 +16,13 @@ const CardVeille: React.FC<CardVeilleProps> = ({ title, onClick }) => {
         onClick={onClick}
       >
         <div className="flex-shrink-0">
-          <Folder className="w-10 h-10 mr-4 text-lightText dark:text-darkText" />
+          <Folder className="w-10 h-10 mr-4 bg-[#FAFAFA] rounded-xl p-2" />
         </div>
         <div className="p-4">
-          <p className="text-xl text-lightText dark:text-darkText">{title}</p>
+          <p className="text-xl">{title}</p>
         </div>
       </div>
-      <hr className="border-t border-gray-300 dark:border-gray-700 my-2" />
+      <Separator className="bg-zinc-800 my-2" />
     </div>
   );
 };
