@@ -1,5 +1,5 @@
 "use client";
-import CustomCard from "@/components/customCard";
+import CustomCard from "@/components/CustomCard";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
