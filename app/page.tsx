@@ -4,22 +4,16 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
 import { Heart } from "lucide-react";
 import { Code } from "lucide-react";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { DiscordIcon } from "@/icons/DiscordIcon";
-import { AppleIcon } from "@/icons/AppleIcon";
-import { DockerIcon } from "@/icons/DockerIcon";
-import { BraveIcon } from "@/icons/BraveIcon";
-import { SpotifyIcon } from "@/icons/SpotifyIcon";
 import { Badge } from "@/components/ui/badge";
-import { VscodeIcon } from "@/icons/VscodeIcon";
 import Espace from "@/components/Espace";
 import { Separator } from "@/components/ui/separator";
 import { ArrowUpRight } from "lucide-react";
 import CustomCard from "@/components/CustomCard";
-
+import { Infinite } from "@/components/InfiniteScroll";
 export default function Accueil() {
   return (
     <div className="mx-auto relative">
@@ -108,8 +102,8 @@ export default function Accueil() {
             J&apos; <Heart className="w-4 h-4 inline" />
           </h2>
           <p className="text-sm">
-            Sport, Voyage, Gaming, Programmation, Ski, Musique , Lord of the
-            Rings, Harry Potter, Animes, Manga,
+            Programmation, Sport, Voyage, Gaming, Ski, Musique , Lord of the
+            Rings, Harry Potter, Anime, Manga,
           </p>
         </CustomCard>
 
@@ -120,18 +114,7 @@ export default function Accueil() {
           </h2>
           <div className="overflow-hidden">
             <div className="flex gap-6">
-              <SpotifyIcon size={40} />
-              <AppleIcon size={40} />
-              <BraveIcon size={40} />
-              <DockerIcon size={40} />
-              <DiscordIcon size={40} />
-              <VscodeIcon size={40} />
-              <SpotifyIcon size={40} />
-              <AppleIcon size={40} />
-              <BraveIcon size={40} />
-              <DockerIcon size={40} />
-              <DiscordIcon size={40} />
-              <VscodeIcon size={40} />
+              <Infinite />
             </div>
           </div>
         </div>
@@ -162,6 +145,9 @@ export default function Accueil() {
               </li>
               <li>
                 <Badge className="border-[#58d68d]">SQL</Badge>
+              </li>
+              <li>
+                <Badge className="border-[#29dada]">Diapason ERP</Badge>
               </li>
             </ul>
           </div>

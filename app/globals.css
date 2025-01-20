@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #020817;
+    --card: #ffffff;
+    --card-foreground: #020817;
+    --popover: #ffffff;
+    --popover-foreground: #020817;
+    --primary: #2563eb;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    --destructive: #ef4444;
+    --destructive-foreground: #f8fafc;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #2563eb;
+  }
+
+  .dark {
+    --background: #020817;
+    --foreground: #f8fafc;
+    --card: #020817;
+    --card-foreground: #f8fafc;
+    --popover: #020817;
+    --popover-foreground: #f8fafc;
+    --primary: #2563eb;
+    --primary-foreground: #f8fafc;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #f8fafc;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #2563eb;
+  }
+}
+
 body {
   font-family: var(--font-geistSans), sans-serif;
   h1 {
@@ -39,60 +85,62 @@ body {
 /* Styles personnalisés pour le markdown */
 .markdown-custom {
   /* Variables pour le thème */
-  --md-heading: #2563eb;
-  --md-subheading: #4b5563;
-  --md-text: #374151;
-  --md-link: #2563eb;
-  --md-link-hover: #1d4ed8;
-  --md-code-bg: #f3f4f6;
-  --md-code-text: #dc2626;
-  --md-block-bg: #1f2937;
-  --md-block-text: #e5e7eb;
-  --md-border: #e5e7eb;
+  --md-heading: #fafafa;
+  --md-subheading: #d1d5db;
+  --md-text: #9ca3af;
+  --md-link: #60a5fa;
+  --md-link-hover: #93c5fd;
+  --md-code-bg: #f8f8f8;
+  --md-code-text: #b30000;
+  --md-block-bg: #f0f0f0;
+  --md-block-text: #fafafa;
+  --md-border: #bbbbbb;
 
   /* Titres */
   & h1 {
     color: var(--md-heading);
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
     border-bottom: 2px solid var(--md-border);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
   }
 
   & h2 {
     color: var(--md-heading);
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
   }
 
   & h3 {
     color: var(--md-subheading);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
   }
 
   /* Paragraphes */
   & p {
     color: var(--md-text);
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
   }
 
   /* Listes */
   & ul,
   & ol {
     color: var(--md-text);
-    margin-left: 1.5rem;
-    margin-bottom: 1.25rem;
+    margin-left: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
   }
 
   & li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 
     &::marker {
       color: var(--md-heading);
@@ -110,55 +158,18 @@ body {
     }
   }
 
-  /* Code inline */
-  & code {
-    background-color: var(--md-code-bg);
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    color: var(--md-code-text);
-  }
-
   /* Blocs de code */
   & pre {
-    background-color: var(--md-block-bg);
-    padding: 1rem;
-    border-radius: 0.5rem;
+    background-color: #0f172a;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
     overflow-x: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 
     & code {
       background-color: transparent;
-      color: var(--md-block-text);
+      color: #fafafa;
       padding: 0;
     }
   }
-}
-
-/* Mode sombre */
-.dark .markdown-custom {
-  --md-heading: #60a5fa;
-  --md-subheading: #9ca3af;
-  --md-text: #e5e7eb;
-  --md-link: #60a5fa;
-  --md-link-hover: #93c5fd;
-  --md-code-bg: #374151;
-  --md-code-text: #f87171;
-  --md-block-bg: #1f2937;
-  --md-block-text: #e5e7eb;
-  --md-border: #4b5563;
-}
-
-/* Mode clair */
-.light .markdown-custom {
-  --md-heading: #2563eb;
-  --md-subheading: #4b5563;
-  --md-text: #374151;
-  --md-link: #2563eb;
-  --md-link-hover: #1d4ed8;
-  --md-code-bg: #f3f4f6;
-  --md-code-text: #dc2626;
-  --md-block-bg: #f3f4f6;
-  --md-block-text: #1f2937;
-  --md-border: #e5e7eb;
 }

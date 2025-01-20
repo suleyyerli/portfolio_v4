@@ -16,7 +16,8 @@ const projects = [
   {
     id: 2,
     title: "Mobile",
-    description: "Application React-Native, Expo, SQLite.",
+    description:
+      "Application React-Native, Expo, SQLite. Permettant de gérer son budget en local.",
     image: "/projetphoto/projetmobile.png",
   },
 

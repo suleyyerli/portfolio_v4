@@ -16,18 +16,20 @@ const CardProject: React.FC<CardProjectProps> = ({
   onClick,
 }) => {
   return (
-    <CustomCard onClick={onClick} className="cursor-pointer">
-      <img
-        src={image}
-        alt="Project"
-        className="object-cover rounded-xl"
-        style={{ width: "300px", height: "150px" }}
-      />
-      <div className="p-4">
-        <h2 className="text-lg font-medium mb-2">{title}</h2>
-        <p className="text-sm">{description}</p>
-      </div>
-    </CustomCard>
+    <div className="relative">
+      <CustomCard onClick={onClick} className="cursor-pointer">
+        <img
+          src={image}
+          alt="Project"
+          className="object-cover rounded-xl"
+          style={{ width: "300px", height: "150px" }}
+        />
+        <div className="p-4">
+          <h2 className="text-lg font-medium mb-2">{title}</h2>
+          <p className="text-sm">{description}</p>
+        </div>
+      </CustomCard>
+    </div>
   );
 };
 
