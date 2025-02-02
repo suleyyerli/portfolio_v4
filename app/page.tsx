@@ -14,6 +14,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowUpRight } from "lucide-react";
 import CustomCard from "@/components/CustomCard";
 import { Infinite } from "@/components/InfiniteScroll";
+import { BorderBeam } from "@/components/ui/border-beam";
 export default function Accueil() {
   return (
     <div className="mx-auto relative">
@@ -29,9 +30,11 @@ export default function Accueil() {
               <h1 className="text-2xl font-bold">Yerli Süleyman</h1>
               <h1>Developpeur Junior ( Fullstack / ERP / )</h1>
             </div>
-            <Avatar className="w-24 h-24">
-              <AvatarImage src="/autre/avatar2.png" />
+            <Avatar className="w-24 h-24 border border-zinc-800">
+              <BorderBeam className="w-24 h-24" />
+              <AvatarImage src="/autre/avatar2.png" className="rounded-sm" />
               <AvatarFallback>CN</AvatarFallback>
+              <BorderBeam className="w-24 h-24" />
             </Avatar>
           </div>
         </Card>

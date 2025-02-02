@@ -163,6 +163,7 @@ const transition = {
 ### 3. Animations conditionnelles
 
 ```tsx
+{% raw %}
 <motion.div
   animate={isOpen ? "open" : "closed"}
   variants={{
@@ -170,6 +171,7 @@ const transition = {
     closed: { opacity: 0, height: 0 },
   }}
 />
+{% endraw %}
 ```
 
 ## Ressources utiles
