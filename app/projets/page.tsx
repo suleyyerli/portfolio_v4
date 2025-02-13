@@ -7,10 +7,10 @@ import Espace from "@/components/Espace";
 const projects = [
   {
     id: 1,
-    title: "UPvote",
+    title: "NewVote",
     description:
-      "Application full-stack, utilisant javascript, NextJS, React, SQLite, Prisma, TailwindCSS, ShadcnUI, Authjs",
-    image: "/projetphoto/projetupvote.png",
+      "Application full-stack, Serveur backend en NodeJS, Express frontend en React, TailwindCSS,DaisyUI, Base de données serveur MySQL.",
+    image: "/projetphoto/NewVote.png",
   },
 
   {

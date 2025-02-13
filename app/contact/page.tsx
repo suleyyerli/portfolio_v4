@@ -21,11 +21,11 @@ export default function Contact() {
         <h2 className="text-lg font-bold mb-2 inline-block">
           Mon adresse email
         </h2>
-        <p>suley.yerli@gmail.com</p>
+        <p>sulXXXXXXXXXXX@gmail.com</p>
         <h2 className="text-lg font-bold mb-2 inline-block">
           Mon numéro de téléphone
         </h2>
-        <p>+33 6 14 92 46 21</p>
+        <p>+33 6 14 XX XX XX</p>
       </div>
     </CustomCard>
   );

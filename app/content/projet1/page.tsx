@@ -6,14 +6,14 @@ export default function Projet1() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch("/markdown/Projet1/upvote.md")
+    fetch("/markdown/Projet1/NewVotecdc.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
 
   return (
     <div className="flex justify-center items-center min-h-screen py-10">
-      <div className="w-screen max-w-[90%] md:max-w-[80%] lg:max-w-[1200px] markdown-custom">
+      <div className="w-screen max-w-[50%] md:max-w-[40%] lg:max-w-[800px] markdown-custom">
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {
