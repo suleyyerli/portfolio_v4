@@ -46,12 +46,11 @@ export default function Accueil() {
           <p className="text-base">
             Je suis étudiant en alternance en{" "}
             <span className="font-medium text-[#FAFAFA]">BTS SIO</span>{" "}
-            spécialisé en{" "}
-            <span className="font-medium text-[#FAFAFA]">SLAM</span>, passionné
-            d&apos;informatique. Mon parcours m&apos;a permis de combiner
-            théorie et expérience professionnelle, avec des projets concrets en
-            entreprise, incluant le développement d&apos;outil pour faciliter le
-            travail en usine, maîtrise et développement sur{" "}
+            spécialisé <span className="font-medium text-[#FAFAFA]">SLAM</span>,
+            passionné d&apos;informatique. Mon parcours m&apos;a permis de
+            combiner théorie et expérience professionnelle, avec des projets
+            concrets en entreprise, incluant le développement d&apos;outil pour
+            faciliter le travail en usine, maîtrise et développement sur{" "}
             <span className="font-medium text-[#FAFAFA]">ERP</span>.
           </p>
           <div className="flex justify-center mt-2">

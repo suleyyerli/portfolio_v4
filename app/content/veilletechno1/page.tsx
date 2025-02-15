@@ -17,14 +17,13 @@ export default function Projet1() {
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {
-              const imagePath = src?.replace(
-                "img/",
-                "/markdown/veille/Article1/img/"
-              );
+              const imagePath = src?.startsWith("/")
+                ? src
+                : `/markdown/veille/Article1/img/${src?.replace("img/", "")}`;
               return (
                 <img
                   src={imagePath}
-                  alt={alt}
+                  alt={alt || ""}
                   className="w-full rounded-lg"
                   {...props}
                 />

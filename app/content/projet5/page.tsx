@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 export default function Projet5() {
   const [content, setContent] = useState("");
@@ -17,11 +18,13 @@ export default function Projet5() {
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {
-              const imagePath = src?.replace("img/", "/markdown/Projet5/img/");
+              const imagePath = src?.startsWith("/")
+                ? src
+                : `/markdown/Projet5/img/${src?.replace("img/", "")}`;
               return (
                 <img
                   src={imagePath}
-                  alt={alt}
+                  alt={alt || ""}
                   className="w-full rounded-lg"
                   {...props}
                 />

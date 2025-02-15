@@ -9,9 +9,9 @@ Pas de restrictions de technologie je pouvais aire comme je le souhaitée.
 
 ## 2. Solution
 
-Je me suis donc renseigné sur les différentes technologies qui pouvaient m'aider à réaliser cette tache. J'ai vu qu'il y'avais pas mal d'api déja existante pour récupérer les taux de change. Mais l'ap avait pour la plus part du temps un free trial limité. C'étais donc une solution payante.
+Je me suis donc renseigné sur les différentes technologies qui pouvaient m'aider à réaliser cette tache. J'ai vu qu'il y'avais pas mal d'api déja existante pour récupérer les taux de change. Mais les api avaient pour la plus part du temps un free trial limité. C'étais donc une solution payante.
 
-J'ai donc chercher une autres solution. Je me suis rendu compte que je pouvais récupérer les taux de change en utilisant un "`scraping`" (ce n'est pas vraiment du scrapping) de la page web.
+J'ai donc chercher une autres solution. Je me suis rendu compte que je pouvais récupérer les taux de change en utilisant une sorte de "`scraping`" (ce n'est pas vraiment du scrapping) de la page web.
 
 J'ai donc chercher sur internet et je suis tombé sur la librairie **`playwright`**.
 
@@ -41,7 +41,7 @@ Le script fonctionne de la manière suivante :
 
 2. **Récupération des Données** :
 
-   - Connexion au site Boursorama (https://www.boursorama.com/bourse/devises/taux-de-change/)
+   - Connexion au site Boursorama (<https://www.boursorama.com/bourse/devises/taux-de-change/>)
    - Attente du chargement du tableau des taux
    - Extraction des données via les sélecteurs CSS
 

@@ -75,11 +75,11 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
 
 - Cas d'utilisation pour l'utilisateur:
 
-![Cas d'utilisation pour l'utilisateur](img/casuser.png)
+![Cas d'utilisation pour l'utilisateur](img/casUser.png)
 
 - Cas d'utilisation pour l'administrateur:
 
-![Cas d'utilisation pour l'administrateur](img/casadmin.png)
+![Cas d'utilisation pour l'administrateur](img/casAdmin.png)
 
 #### Catégories/Types d'Utilisateurs
 
@@ -102,7 +102,7 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
 
 ## Wireframe
 
-![Wireframe](img/wireframe.png)
+![Wireframe](img/Wireframe.png)
 
 ### Charte Graphique
 
