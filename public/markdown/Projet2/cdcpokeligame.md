@@ -8,12 +8,10 @@
 
 **Pokeligame** est une application mobile de gestion de collection de cartes de booster et de display Pokémon. Cette application permet aux utilisateurs de suivre leur collection personnelle de cartes de booster et de display, tout en évaluant la valeur totale de leur collection. L'utilisateur peut mettre à jour les prix et les quantités de ses items au fur et à mesure.
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-    <img src="img/acceuil.png" width="300" alt="Accueil">
-    <img src="img/collection.png" width="300" alt="Collection">
-    <img src="img/statistique.png" width="300" alt="Statistiques">
-    <img src="img/formulaire.png" width="300" alt="Formulaire">
-</div>
+![Accueil](img/acceuil.png)
+![Collection](img/collection.png)
+![Statistiques](img/statistique.png)
+![Formulaire](img/formulaire.png)
 
 ### Stack Technologique
 
@@ -468,12 +466,10 @@ frontend/
 
 ### WIREFRAME
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-    <img src="img/wireacceuil.png" width="300" alt="Wireframe Accueil">
-    <img src="img/wirecollection.png" width="300" alt="Wireframe Collection">
-    <img src="img/wirestats.png" width="300" alt="Wireframe Stats">
-    <img src="img/wireformulaire.png" width="300" alt="Wireframe Formulaire">
-</div>
+![Wireframe Accueil](img/wireacceuil.png)
+![Wireframe Collection](img/wirecollection.png)
+![Wireframe Stats](img/wirestats.png)
+![Wireframe Formulaire](img/wireformulaire.png)
 
 ### Exemples de Code Frontend
 
