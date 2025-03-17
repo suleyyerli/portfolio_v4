@@ -1,6 +1,6 @@
-# Projet BTS SIO 1
+# Documentation NewVote
 
-## Introduction
+## 1. Introduction
 
 NewVote est une application de réseau social permettant aux utilisateurs de partager des posts, commenter et interagir avec la communauté. Ce compte rendu technique détaille les choix technologiques et l'implémentation des différentes fonctionnalités.
 
@@ -8,44 +8,20 @@ NewVote est une application de réseau social permettant aux utilisateurs de par
 
 ![Stack Technologique](img/stacktech.png)
 
-- **Backend** : Express.js (Node.js)
-
-  - Framework web minimaliste et flexible
-  - Facilite la création d'API RESTful
-  - Middleware system pour la gestion des requêtes
-
-- **Frontend** : Next.js avec React et TypeScript
-
-  - Framework React avec rendu côté serveur (SSR)
-  - TypeScript pour un typage statique et une meilleure maintenabilité
-  - Système de routing intégré
-
-- **Base de données** : MySQL avec Sequelize ORM
-
-  - Base de données relationnelle robuste
-  - ORM pour une manipulation simplifiée des données
-  - Migrations et modèles structurés
-
-- **UI/UX** : DaisyUI et Tailwind CSS
-
-  - Framework CSS utilitaire
-  - Composants préconçus et personnalisables
-  - Design system cohérent
-
-- **Authentification** : JWT (JSON Web Tokens)
-  - Authentification sans état (stateless)
-  - Sécurité basée sur les tokens
-  - Gestion des sessions côté client
-
-## Établir la Problématique
+- **Backend**: `Express` (JS)
+- **Frontend**: `React`
+- **Base de données**: `MySQL`
+- **Outils de développement**:
+  - `Insomnia` pour les tests d'API
+  - `Git` pour la gestion de version
 
 ### Problématique
 
 Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et recevoir des propositions de la part de la communauté de manière efficace et intuitive ?
 
-## Cahier des Charges
+## 2. Cahier des Charges
 
-### Fonctionnalités
+### Description des Fonctionnalités
 
 1. **Inscription et Connexion des Utilisateurs**
 
@@ -98,9 +74,9 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Gestion des posts
    - Consultation des statistiques des posts
 
-## Charte Graphique et UI Kit
+### Charte Graphique et UI Kit
 
-## Wireframe
+### Wireframe
 
 ![Wireframe](img/Wireframe.png)
 
@@ -182,15 +158,11 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
      - Fond légèrement grisé
      - Avatar plus petit que les posts
 
-## Planification de la Réalisation
-
-### Planification des Tâches
+### Plan de Développement
 
 ![Planification des Tâches](img/plani.png)
 
-## Plan de Développement - Application de Réseau Social
-
-## Phase 1 : Configuration Initiale
+### Phase 1 : Configuration Initiale
 
 1. **Mise en place de l'environnement de développement**
 
@@ -203,7 +175,7 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Initialisation du projet front-end (React)
    - Configuration de base des deux projets
 
-## Phase 2 : Back-end Base
+### Phase 2 : Back-end Base
 
 1. **Configuration de la base de données**
 
@@ -222,7 +194,7 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Création des services
    - Configuration des middlewares
 
-## Phase 3 : Back-end Fonctionnalités
+### Phase 3 : Back-end Fonctionnalités
 
 1. **Gestion des posts**
 
@@ -241,7 +213,7 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Routes administrateur
    - Sécurisation des routes sensibles
 
-## Phase 4 : Front-end Base
+### Phase 4 : Front-end Base
 
 1. **Configuration React**
 
@@ -254,7 +226,7 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Navigation
    - Composants réutilisables
 
-## Phase 5 : Front-end Pages
+### Phase 5 : Front-end Pages
 
 1. **Authentification**
 
@@ -273,10 +245,11 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Système de commentaires
    - Gestion des likes
 
-## Phase 6 : Finalisation
+### Phase 6 : Finalisation
 
 1. **Tests**
 
+   - Insomnia
    - Tests unitaires back-end
    - Tests d'intégration
    - Tests front-end
@@ -292,27 +265,98 @@ Comment permettre aux utilisateurs de partager leurs dilemmes ou questions et re
    - Mise en production
    - Documentation
 
-### Schéma de la Base de Données
+## 3. Base de Données
 
-Les tables de la base de données sont les suivantes :
+> La structure de la base de données a été conçue pour répondre aux besoins spécifiques d'une plateforme sociale de partage et d'interaction. Le choix de MySQL s'est imposé pour sa robustesse, sa scalabilité et sa capacité à gérer efficacement les relations complexes entre les données. La séparation en quatre tables distinctes (users, posts, comments, commentlikes) permet une gestion claire et efficace des différentes entités de l'application, tout en maintenant des relations cohérentes entre les utilisateurs, leurs publications et leurs interactions. Cette architecture facilite notamment les requêtes complexes comme l'agrégation des likes sur les commentaires ou la récupération des posts avec leurs auteurs.
 
-![Schéma de la Base de Données](img/tablesdb.png)
+### Dictionnaire de Données
 
-## Dictionnaire de Données
+![Dictionnaire de Données](img/dbschema.png)
 
-![Dictionnaire de Données](img/tableuser.png)
+**Table: users**
 
-![Dictionnaire de Données](img/tableposts.png)
+Description: Contient les informations des utilisateurs enregistrés dans l'application.
 
-![Dictionnaire de Données](img/tablecomments.png)
+Colonnes:
 
-![Dictionnaire de Données](img/commentlike.png)
+- id (integer, primary key, auto increment) : Identifiant unique de l'utilisateur.
+- username (varchar(50), not null, unique) : Nom d'utilisateur unique.
+- email (varchar(100), not null, unique) : Adresse e-mail unique de l'utilisateur.
+- password (varchar(255), not null) : Mot de passe crypté de l'utilisateur.
+- role (enum('user', 'admin'), default: 'user') : Rôle de l'utilisateur (utilisateur ou administrateur).
+- createdAt (timestamp) : Date et heure de création de l'utilisateur.
+- updatedAt (timestamp) : Date et heure de la dernière mise à jour de l'utilisateur.
 
-## Documentation Technique
+**Table: posts**
+
+Description: Contient les publications créées par les utilisateurs.
+
+Colonnes:
+
+- id (integer, primary key, auto increment) : Identifiant unique de la publication.
+- content (text, not null) : Contenu de la publication.
+- userId (integer, not null) : Identifiant de l'utilisateur qui a créé la publication (clé étrangère vers users.id).
+- createdAt (timestamp) : Date et heure de création de la publication.
+- updatedAt (timestamp) : Date et heure de la dernière mise à jour de la publication.
+
+**Table: comments**
+
+Description: Contient les commentaires laissés sur les publications.
+
+Colonnes:
+
+- id (integer, primary key, auto increment) : Identifiant unique du commentaire.
+- content (text, not null) : Contenu du commentaire.
+- userId (integer, not null) : Identifiant de l'utilisateur ayant écrit le commentaire (clé étrangère vers users.id).
+- postId (integer, not null) : Identifiant de la publication sur laquelle le commentaire a été laissé (clé étrangère vers posts.id).
+- likesCount (integer, default: '0') : Nombre de likes sur ce commentaire.
+- createdAt (timestamp) : Date et heure de création du commentaire.
+- updatedAt (timestamp) : Date et heure de la dernière mise à jour du commentaire.
+
+**Table: commentlikes**
+
+Description: Contient les likes laissés sur les commentaires par les utilisateurs.
+
+Colonnes:
+
+- id (integer, primary key, auto increment) : Identifiant unique du like.
+- commentId (integer, not null) : Identifiant du commentaire qui a reçu le like (clé étrangère vers comments.id).
+- userId (integer, not null) : Identifiant de l'utilisateur ayant liké le commentaire (clé étrangère vers users.id).
+- createdAt (timestamp) : Date et heure de la création du like.
+- updatedAt (timestamp) : Date et heure de la dernière mise à jour du like.
+
+Relations entre les tables
+
+- `users à posts` : Relation "un utilisateur peut avoir plusieurs publications" (one-to-many).
+- `users à comments` : Relation "un utilisateur peut avoir plusieurs commentaires" (one-to-many).
+- `posts à comments` : Relation "une publication peut avoir plusieurs commentaires" (one-to-many).
+- `comments à commentlikes` : Relation "un commentaire peut avoir plusieurs likes" (one-to-many).
+- `users à commentlikes` : Relation "un utilisateur peut aimer plusieurs commentaires" (one-to-many).
+
+## 4. Backend et Fonctionnalités
+
+### Backend (Express.js)
+
+> Le choix d'Express.js pour le backend s'est imposé naturellement pour sa simplicité d'implémentation et sa grande flexibilité. L'architecture MVC adoptée permet une organisation claire du code, facilitant la maintenance et l'évolution de l'application. Cette structure, couplée à l'utilisation de middlewares pour l'authentification et la sécurité, offre une base solide pour le développement des fonctionnalités de l'application sociale.
+
+### Configuration et Structure
+
+Le backend est structuré selon le pattern MVC (Model-View-Controller) :
+
+```
+backend/
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middlewares/
+│   └── server.js
+```
 
 ### Système d'Authentification
 
-#### Vue d'ensemble
+### Vue d'ensemble
 
 L'authentification dans NewVote utilise les JSON Web Tokens (JWT). Voici comment cela fonctionne étape par étape :
 
@@ -459,8 +503,6 @@ Explications :
 - L'intercepteur Axios ajoute automatiquement le token aux requêtes
 - Le format "Bearer" est le standard pour l'authentification JWT
 
-[Image à ajouter : Diagramme de séquence montrant le flux d'authentification]
-
 ### Sécurité
 
 Plusieurs mesures de sécurité sont mises en place :
@@ -470,23 +512,6 @@ Plusieurs mesures de sécurité sont mises en place :
 3. Validation des données côté serveur
 4. Protection CSRF avec les tokens
 5. Headers de sécurité HTTP
-
-## Backend (Express.js)
-
-### Configuration et Structure
-
-Le backend est structuré selon le pattern MVC (Model-View-Controller) :
-
-```
-backend/
-├── src/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middlewares/
-│   └── server.js
-```
 
 ### Exemple Détaillé : Gestion des Posts
 
@@ -544,12 +569,16 @@ exports.createPost = async (req, res) => {
 
 Pour tester nos endpoints, nous utilisons Insomnia. Voici un exemple de test pour la création d'un post :
 
-[Image à ajouter : Capture d'écran Insomnia montrant :
+![Test API avec Insomnia](img/insomnia.png)
 
 1. La requête POST vers /api/posts
 2. Le header Authorization avec le token JWT
 3. Le body de la requête avec le contenu du post
-4. La réponse du serveur]
+4. La réponse du serveur
+
+Exemple de réponse du serveur :
+
+![Réponse du serveur](img/insomniar.png)
 
 ### Connexion à la Base de Données
 
@@ -570,7 +599,9 @@ const sequelize = new Sequelize(
 
 [Image à ajouter : Capture d'écran de MySQL Workbench montrant la structure de la table Posts]
 
-## Frontend (Next.js)
+## 5. Frontend et Fonctionnalités
+
+> Côté frontend, l'utilisation de Next.js et React permet de créer une interface utilisateur moderne et réactive. Cette stack technologique, associée à DaisyUI pour le design, offre une expérience utilisateur fluide et agréable tout en facilitant le développement des différentes fonctionnalités sociales de l'application. La communication avec le backend via Axios assure des échanges de données efficaces et sécurisés.
 
 ### Communication avec le Backend
 
@@ -614,11 +645,9 @@ useEffect(() => {
 }, []);
 ```
 
-[Image à ajouter : Capture d'écran du feed montrant :
-
 1. L'interface utilisateur avec les posts
 2. Les outils de développement Chrome avec l'onglet Network
-3. La requête API et sa réponse]
+3. La requête API et sa réponse
 
 ### Gestion de l'État et Rendu
 
@@ -637,11 +666,9 @@ const handleShowComments = async () => {
 };
 ```
 
-[Image à ajouter : Capture d'écran montrant l'interaction utilisateur :
-
 1. État initial du post
 2. Affichage des commentaires après clic
-3. Formulaire d'ajout de commentaire]
+3. Formulaire d'ajout de commentaire
 
 ## Conclusion
 

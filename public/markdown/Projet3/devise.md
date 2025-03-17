@@ -2,18 +2,16 @@
 
 ## 1. Introduction
 
-Je travaille dans une entreprise `internationale` qui a des filiales dans plusieurs pays. Pour les comptables j'avais pour mission de retourné le `taux de change` dans différentes devises en `temps réel`.
-Une fois l'information récupérer, je devais la formater et la mettre dans un fichier texte.
-Pour ensuite pouvoir l'integrer dans **`l'ERP`** de l'entreprise.
-Pas de restrictions de technologie je pouvais aire comme je le souhaitée.
+Je travaille dans une entreprise internationale qui a des filiales dans plusieurs pays. Pour les `comptables`,j'avais pour mission de retourner le taux de change dans différentes devises en `temps réel`.
+Une fois l'information récupérée, je devais la `formater` et la mettre dans un fichier texte. Pour ensuite pouvoir l'intégrer dans l'`ERP` de l'entreprise.
+Pas de restrictions de technologie, je pouvais faire comme je le souhaitais.
 
 ## 2. Solution
 
-Je me suis donc renseigné sur les différentes technologies qui pouvaient m'aider à réaliser cette tache. J'ai vu qu'il y'avais pas mal d'api déja existante pour récupérer les taux de change. Mais les api avaient pour la plus part du temps un free trial limité. C'étais donc une solution payante.
-
-J'ai donc chercher une autres solution. Je me suis rendu compte que je pouvais récupérer les taux de change en utilisant une sorte de "`scraping`" (ce n'est pas vraiment du scrapping) de la page web.
-
-J'ai donc chercher sur internet et je suis tombé sur la librairie **`playwright`**.
+Je me suis donc renseigné sur les différentes technologies qui pouvaient m'aider à réaliser cette tâche.
+J'ai vu qu'il y avait pas mal d'`API` déjà existantes pour `récupérer les taux de change`. Mais les API avaient, pour la plupart du temps, un `free trial limité`. C'était donc une solution `payante`.
+J'ai donc cherché une autre solution.
+Je me suis rendu compte que je pouvais récupérer les taux de change en utilisant une sorte de "`scraping`" (ce n'est pas vraiment du scrapping) de la page web.
 
 ## 3. Technologies Utilisées
 
@@ -39,13 +37,13 @@ Le script fonctionne de la manière suivante :
    - Configuration des chemins de fichiers
    - Définition des devises à surveiller (EUR, USD, JPY, GBP, CHF, etc.)
 
-2. **Récupération des Données** :
+2. **Récupération des données** :
 
    - Connexion au site Boursorama (<https://www.boursorama.com/bourse/devises/taux-de-change/>)
    - Attente du chargement du tableau des taux
    - Extraction des données via les sélecteurs CSS
 
-3. **Traitement des Données** :
+3. **Traitement des données** :
 
    - Formatage des taux de change en tableau
    - Ajout des en-têtes avec les devises
@@ -78,7 +76,7 @@ Le projet s'exécute de manière automatisée avec les caractéristiques suivant
 - Gestion des erreurs intégrée
 - Configuration facile à modifier (devises, intervalles)
 
-## 6. Conclusion
+## Conclusion
 
 Cette solution permet de :
 

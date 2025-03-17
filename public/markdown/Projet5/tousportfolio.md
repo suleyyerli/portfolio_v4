@@ -2,7 +2,7 @@
 
 ## Première version de mon portfolio
 
-#### Ce portfolio a été réalisé en première année de BTS.
+#### Ce portfolio a été réalisé en première année de BTS
 
 **Stack** : `NEXTJS, TAILWIND, SHADCN/UI, REACT`
 
@@ -14,11 +14,11 @@ Style simple et moderne.
 
 ## Deuxième version de mon portfolio
 
-Style beaucoup plus travaillé avec un style gaming. Mais pas assez `"professionnel"` selon moi.
+Style beaucoup plus travaillé avec un thème gaming. Mais pas assez `"professionnel"` à mon avis.  
 **Stack** : `NEXTJS, TAILWIND, SHADCN/UI, REACT`
 
-Je me suis inspiré de la console de jeux vidéo.
-Je n'ai pas choisi d'utiliser ce portfolio car pas assez `"professionnel"` selon moi.
+Je me suis inspiré de la console de jeux vidéo.  
+Je n'ai pas choisi d'utiliser ce portfolio car il n'est pas assez `"professionnel"` à mon avis.
 
 ![img](img/pro1.png)
 
@@ -31,5 +31,3 @@ Je n'ai pas choisi d'utiliser ce portfolio car pas assez `"professionnel"` selon
 ![img](img/pro5.png)
 
 ![img](img/pro6.png)
-
-Encore d'autres portfolios ont été réalisés...

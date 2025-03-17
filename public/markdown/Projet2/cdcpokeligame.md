@@ -37,13 +37,13 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 
 ### Description des Fonctionnalités
 
-#### 1. **Gestion des Utilisateurs**
+1. **Gestion des Utilisateurs**
 
 - Inscription et connexion
 - Profil utilisateur
 - Sécurité des données
 
-#### 2. **Gestion de la Collection**
+2. **Gestion de la Collection**
 
 - Ajout de cartes à la collection
 - Ajout de booster à la collection
@@ -53,7 +53,7 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 - Mise à jour des prix
 - Évaluation de la valeur totale
 
-#### 3. **Gestion des Items**
+3. **Gestion des Items**
 
 - Gestion unifiée des cartes de booster et displays
 - Mise à jour des prix et quantités
@@ -121,19 +121,19 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 
 ### Plan de Développement
 
-#### 1. **Phase 1**: Mise en place de l'infrastructure
+1. **Phase 1: Mise en place de l'infrastructure**
 
 - Mise en place de la base de données
 - Configuration du backend Flask
 - Configuration du frontend React Native
 
-#### 2. **Phase 2**: Développement Backend
+2. **Phase 2: Développement Backend**
 
 - Création des routes API
 - Implémentation de la logique métier
 - Tests avec Insomnia
 
-#### 3. **Phase 3**: Développement Frontend
+3. **Phase 3: Développement Frontend**
 
 - Création des composants UI
 - Intégration des API
@@ -147,7 +147,7 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 
 ### Dictionnaire de Données
 
-#### **Table Users**
+### **Table Users**
 
 - `id` (INT, PK)
 - `email` (VARCHAR, UNIQUE)
@@ -155,7 +155,7 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 - `username` (VARCHAR)
 - `date_creation` (DATETIME)
 
-#### **Table Cards**
+### **Table Cards**
 
 - `id` (INT, PK)
 - `name` (VARCHAR)
@@ -164,7 +164,7 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 - `price` (FLOAT)
 - `user_id` (INT, FK)
 
-#### **Table Boosters**
+### **Table Boosters**
 
 - `id` (INT, PK)
 - `user_id` (INT, FK)
@@ -173,7 +173,7 @@ La gestion d'une collection de cartes de booster et de display Pokémon peut dev
 - `price` (DECIMAL)
 - `rarity` (INT)
 
-#### **Table Displays**
+### **Table Displays**
 
 - `id` (INT, PK)
 - `user_id` (INT, FK)
@@ -207,7 +207,7 @@ backend/
 
 ### Exemples de Code Backend
 
-#### **Récupération des Items** (routes/items.py)
+### **Récupération des Items** (routes/items.py)
 
 ```python
 @items_bp.route("/items", methods=["GET"])
@@ -265,7 +265,7 @@ Cette route permet de récupérer tous les items (cartes, boosters et displays) 
 - Combine les résultats en un seul format unifié
 - Retourne les données au format JSON
 
-#### **Création d'un Item** (routes/items.py)
+### **Création d'un Item** (routes/items.py)
 
 ```python
 @items_bp.route("/items", methods=["POST"])
@@ -325,7 +325,7 @@ Cette route permet d'ajouter un nouvel item à la collection. Elle :
 - Gère les erreurs potentielles
 - Retourne les données de l'item créé
 
-#### **Calcul de la Valeur Totale** (routes/items.py)
+### **Calcul de la Valeur Totale** (routes/items.py)
 
 ```python
 @items_bp.route("/collection/total", methods=["GET"])
@@ -397,7 +397,7 @@ Cette route calcule la valeur totale de la collection. Elle :
 
 ### Fonctionnalités Backend
 
-#### **Authentification**
+### Authentification
 
 - **Inscription** (`/api/register`)
   - Validation des données
@@ -408,7 +408,7 @@ Cette route calcule la valeur totale de la collection. Elle :
   - Vérification des identifiants
 - **Déconnexion** (`/api/logout`)
 
-#### **Gestion de la Collection**
+### Gestion de la Collection
 
 - **Récupération de tous les items** (`/api/items`)
   - Liste unifiée des cartes de booster et displays
@@ -429,7 +429,7 @@ Cette route calcule la valeur totale de la collection. Elle :
   - Total général de la collection
   - Quantités et compteurs
 
-### **Sécurité**
+### Sécurité
 
 - Authentification JWT
 - Protection des routes
@@ -473,7 +473,7 @@ frontend/
 
 ### Exemples de Code Frontend
 
-#### **Configuration de l'API** (app/services/api.ts)
+### Configuration de l'API (app/services/api.ts)
 
 ```typescript
 import axios from "axios";
@@ -504,7 +504,7 @@ export default api;
 - Création d'une instance API
 - Gestion automatique du token d'authentification
 
-#### **Composant de Carte** (components/CardItem.tsx)
+### Composant de Carte (components/CardItem.tsx)
 
 ```typescript
 const CardItem = ({ item, onEdit, onDelete }: CardItemProps) => {
@@ -533,7 +533,7 @@ const CardItem = ({ item, onEdit, onDelete }: CardItemProps) => {
 - Structure de carte avec image et informations
 - Affichage de la rareté avec étoiles
 
-#### **Styles de Carte** (components/CardItem.tsx)
+### Styles de Carte (components/CardItem.tsx)
 
 ```typescript
 const styles = StyleSheet.create({
@@ -573,7 +573,7 @@ const styles = StyleSheet.create({
 - Gestion des états avec React Hooks
 - Gestion des erreurs et des états de chargement
 
-#### **Exemple de Récupération** (collection.tsx)
+### Exemple de Récupération (collection.tsx)
 
 ```typescript
 export default function Collection() {
@@ -650,13 +650,13 @@ export default function Collection() {
 
 ### Fonctionnalités Frontend
 
-#### **Navigation**
+### **Navigation**
 
 - Système d'onglets pour la navigation principale
 - Routes protégées pour l'authentification
 - Modals pour les interactions utilisateur
 
-#### **Pages Principales**
+### **Pages Principales**
 
 1. **Accueil**
 
@@ -677,7 +677,7 @@ export default function Collection() {
    - Graphiques de la valeur
    - Évolution des prix
 
-#### **Composants UI**
+### **Composants UI**
 
 ![imgtitle](img/buttonadd.png)
 ![imgtitle](img/buttonauth.png)
@@ -697,11 +697,11 @@ export default function Collection() {
   - Gestion des erreurs
   - Mise à jour des informations
 
-#### **Gestion d'État**
+### **Gestion d'État**
 
 - Context API pour l'authentification
 
-#### **Animations**
+### **Animations**
 
 - Utilisation de modal
 

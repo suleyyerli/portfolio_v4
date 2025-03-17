@@ -28,7 +28,7 @@ export default function Accueil() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold">Yerli Süleyman</h1>
-              <h1>Developpeur Junior ( Fullstack / ERP / )</h1>
+              <h1>Développeur Junior ( Fullstack / ERP / )</h1>
             </div>
             <Avatar className="w-24 h-24 border border-zinc-800">
               <BorderBeam className="w-24 h-24" />
@@ -44,14 +44,17 @@ export default function Accueil() {
           <h2 className="text-lg font-medium mb-2">Description</h2>
           <Separator className="bg-zinc-800 my-2" />
           <p className="text-base">
-            Je suis étudiant en alternance en{" "}
+            Je suis étudiant en alternance en 👨‍🎓
             <span className="font-medium text-[#FAFAFA]">BTS SIO</span>{" "}
             spécialisé <span className="font-medium text-[#FAFAFA]">SLAM</span>,
-            passionné d&apos;informatique. Mon parcours m&apos;a permis de
+            passionné d&apos;informatique 💻. Mon parcours m&apos;a permis de
             combiner théorie et expérience professionnelle, avec des projets
-            concrets en entreprise, incluant le développement d&apos;outil pour
-            faciliter le travail en usine, maîtrise et développement sur{" "}
-            <span className="font-medium text-[#FAFAFA]">ERP</span>.
+            concrets en entreprise 🏢, incluant le développement d&apos;outil
+            pour faciliter le travail en usine 🏭, maîtrise et développement sur{" "}
+            <span className="font-medium text-[#FAFAFA]">ERP</span> 🔧.
+            J&apos;aime expérimenter de nouveaux outils et frameworks pour
+            affiner mes compétences ⚡. Je suis curieux et j&apos;aime apprendre
+            de nouvelles choses 📚. Actuellement sur Rust ... 🦀
           </p>
           <div className="flex justify-center mt-2">
             <Button className="bg-zinc-900 text-[#FAFAFA]">
@@ -193,7 +196,7 @@ export default function Accueil() {
 
           <div className="flex justify-center mt-2">
             <Button className="bg-[#FAFAFA] text-[#000000]">
-              <a href="/cv.pdf" download="cv.pdf">
+              <a href="/autre/cv_suleyman.pdf" download="cv.pdf">
                 CV
                 <ArrowUpRight className="w-4 h-4 inline animate-bounce" />
               </a>

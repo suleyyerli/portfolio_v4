@@ -4,45 +4,46 @@
 
 Qu'est-ce que la veille technologique ?
 
-La veille technologique est une activité qui consiste à suivre **`les évolutions technologiques et les nouvelles technologies`**.
-Elle est très importante pour les informaticiens, les développeurs. Elle permet de **`rester à jour`** sur les nouvelles technologies et de pouvoir les utiliser dans nos projets.
+La veille technologique est une activité qui consiste à suivre **`les évolutions technologiques et les nouvelles technologies`**.  
+Elle est très importante pour les informaticiens et les développeurs. Elle permet de **`rester à jour`** sur les nouvelles technologies et de pouvoir les utiliser dans nos projets.
 
 ## Les outils que j'utilise
 
-- **`Youtube`** :
-  J'utilise principalement youtube pour effectuer ma veille technologique.
+- **`Youtube`** :  
+  J'utilise principalement YouTube pour effectuer ma veille technologique.
 
 1. Comment je procède ?
 2. Comment je trouve les vidéos ?
 3. Quelles sont les vidéos que je regarde ?
 
-Comme vous le savez, il existe enormement de chaines youtube qui parle de technologie.
-Pour ma part je regarde plusieurs chaines youtube selon le besoin. Cela me permet de filtrer étant abonnée à des chaines qui ne parlent pas de ce que je cherche.
+Comme vous le savez, il existe énormément de chaînes YouTube qui parlent de technologie.  
+Pour ma part, je regarde plusieurs chaînes YouTube selon le besoin. Cela me permet de filtrer en étant abonné à des chaînes qui ne parlent pas de ce que je cherche.
 
-Voici quelques chaines que je regarde :
+Voici quelques chaînes que je regarde :
 
 - **Micode** : Pour une veille générale.
 - **Underscore** : Pour une veille plus technique.
-- **Melvynx** : Pour des tutos et des vidéos sur javascript / React / Next.js / Tailwind / etc...
-- **Waked XY** : Tutoriels tryhackme / hackthebox / une chaîne plus orientée sur la cybersécurité.
-- **cocadmin** : Pour des vidéos sur **DOCKER**.
+- **Melvynx** : Pour des tutos et des vidéos sur JavaScript / React / Next.js / Tailwind / etc...
+- **Waked XY** : Tutoriels TryHackMe / HackTheBox / une chaîne plus orientée sur la cybersécurité.
+- **Cocadmin** : Pour des vidéos sur **DOCKER**.
 
-Les chaines que je regarde sont très variées, et parle de sujet différents. Les chaînes comme **Micode** ou **Underscore** parle de sujet très vastes et non d'un domaine spécifique. Tanids que **Melvynx** ou **Cocadmin** parle de sujet spécifique. Et de technologie précise avec des tutoriels.
+Les chaînes que je regarde sont très variées et parlent de sujets différents.  
+Les chaînes comme **Micode** ou **Underscore** parlent de sujets très vastes et non d'un domaine spécifique, tandis que **Melvynx** ou **Cocadmin** parlent de sujets spécifiques et de technologies précises avec des tutoriels.
 
-Etant abonné à des chaines qui parle de sujet différents, je peux filtrer les vidéos qui ne m'intéresse pas.
+Étant abonné à des chaînes qui parlent de sujets différents, je peux filtrer les vidéos qui ne m'intéressent pas.
 
-De plus étant abonné à une chaîne il y a toute une communauté derrière un youtuber. Et je peux donc poser des questions sur les vidéos. Ou comme la plupart du temps rejoindre des serveurs discord. D'ou la liaison entre youtube et discord.
+De plus, étant abonné à une chaîne, il y a toute une communauté derrière un YouTuber. Je peux donc poser des questions sur les vidéos ou, comme la plupart du temps, rejoindre des serveurs Discord. D'où la liaison entre YouTube et Discord.
 
 - **`Discord`** :
 
-Je rejoins des serveurs discord dans lesquels les membres partagent des informations. Ou encore des expert en developpement qui peuvent m'aider à résoudre des problèmes.
-Les mentors sont très utiles pour les débutants comme moi. il y a toutes sortent de profile sur les serveurs discord. Ceux qi me permet moi aussi d'aider les autres.
+Je rejoins des serveurs Discord dans lesquels les membres partagent des informations, ou encore des experts en développement qui peuvent m'aider à résoudre des problèmes.  
+Les mentors sont très utiles pour les débutants comme moi. Il y a toutes sortes de profils sur les serveurs Discord, ce qui me permet moi aussi d'aider les autres.
 
 - **`Twitter`** :
 
-Je ne suis pas très actif sur twitter. Mais twitter me permet de suivre les grosse avancées technologiques. Mondialement.
+Je ne suis pas très actif sur Twitter, mais Twitter me permet de suivre les grandes avancées technologiques à l'échelle mondiale.
 
 - **`Google`** :
 
-Google un outils très puissant avec des outils de recherche très pratique. Il faut être curieux.
-Je recherche des information précise ou alors des journaux de presse. Comme le `mondeinformatiquecom`, `it-connect.fr`, `https://www.lemonde.fr/cybercriminalite/`
+Google est un outil très puissant avec des outils de recherche très pratiques. Il faut être curieux.  
+Je recherche des informations précises ou alors des journaux de presse, comme le `mondeinformatique.com`, `it-connect.fr`, et [Le Monde Cybercriminalité](https://www.lemonde.fr/cybercriminalite/).

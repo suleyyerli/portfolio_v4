@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-export default function Projet3() {
+export default function Projet2() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Projet3() {
 
   return (
     <div className="flex justify-center items-center min-h-screen py-10">
-      <div className="w-screen max-w-[90%] md:max-w-[80%] lg:max-w-[1200px] markdown-custom">
+      <div className="w-screen max-w-[70%] md:max-w-[50%] lg:max-w-[1000px] markdown-custom">
         <ReactMarkdown
           components={{
             img: ({ src, alt, ...props }) => {

@@ -15,10 +15,6 @@ const veilleTechno = [
     id: 2,
     title: "Docker et Docker-compose",
   },
-  {
-    id: 3,
-    title: "Article 3",
-  },
 ];
 
 export default function Projets() {
@@ -102,7 +98,7 @@ export default function Projets() {
             </Link>
           </li>
 
-          <h2 className="mt-4 text-lg font-bold mb-2">Journaux de presse :</h2>
+          <h2 className="mt-4 text-lg font-bold mb-2">Articles de presse :</h2>
           <li>
             <Link href="https://www.lemonde.fr/cybercriminalite/">
               <Button className="p-2 shadow-none hover:bg-zinc-900">

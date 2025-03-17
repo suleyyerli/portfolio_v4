@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "Mobile",
     description:
-      "Application React-Native, Expo, SQLite. Permettant de gérer son budget en local.",
+      "Application React-Native, Expo, SQLite. Permettant de gérer sa collection Pokemon.",
     image: "/projetphoto/ProjetMobile.png",
   },
 
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Devise",
     description:
-      "Pour mission en entreprise de retourner le taux de devise en temps réel.",
+      "Pour mission en entreprise de retourner le taux de change en temps réel.",
     image: "/projetphoto/projetdevise.png",
   },
 
