@@ -12,7 +12,7 @@ export default function Contact() {
         </h2>
 
         <Button className="hover:bg-zinc-900 bg-zinc-800">
-          <a href="/cv.pdf" download="cv.pdf">
+          <a href="/autre/cv_suleyman.pdf" download="cv.pdf">
             CV
             <Download className="w-4 h-4 inline animate-bounce" />
           </a>

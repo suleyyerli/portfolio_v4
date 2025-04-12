@@ -7,6 +7,20 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "suleyyerli",
   description: "Bienvenue sur mon portfolio",
+  keywords:
+    "développeur web, React, Next.js, TypeScript, portfolio, frontend, développement web",
+  authors: [{ name: "Suleyman Suleyyerli" }],
+  openGraph: {
+    title: "Portfolio Développeur Web | Expert en React, Next.js et TypeScript",
+    description:
+      "Portfolio professionnel d'un développeur web spécialisé en React, Next.js et TypeScript",
+    type: "website",
+    locale: "fr_FR",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

@@ -15,6 +15,10 @@ const veilleTechno = [
     id: 2,
     title: "Docker et Docker-compose",
   },
+  {
+    id: 3,
+    title: "RUST vs C++",
+  },
 ];
 
 export default function Projets() {
