@@ -11,6 +11,7 @@ const projects = [
     description:
       "Application full-stack, Serveur backend en NodeJS, Express frontend en React, TailwindCSS,DaisyUI, Base de données serveur MySQL.",
     image: "/projetphoto/NewVote.png",
+    githubUrl: "https://github.com/suleyyerli/NewVote",
   },
 
   {
@@ -19,6 +20,7 @@ const projects = [
     description:
       "Application React-Native, Expo, SQLite. Permettant de gérer sa collection Pokemon.",
     image: "/projetphoto/ProjetMobile.png",
+    githubUrl: "https://github.com/suleyyerli/pokeligame",
   },
 
   {
@@ -27,6 +29,7 @@ const projects = [
     description:
       "Pour mission en entreprise de retourner le taux de change en temps réel.",
     image: "/projetphoto/projetdevise.png",
+    githubUrl: "https://github.com/suleyyerli/app_devise",
   },
 
   {
@@ -42,6 +45,7 @@ const projects = [
     description:
       "Création de portfolio durant ma formation en tant que développeur fullstack.",
     image: "/projetphoto/exportfolio.png",
+    githubUrl: "https://github.com/suleyyerli/portfolio_nextjs",
   },
 ];
 

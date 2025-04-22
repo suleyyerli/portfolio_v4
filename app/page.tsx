@@ -170,7 +170,7 @@ export default function Accueil() {
                   <span className=" font-medium">
                     <GithubIcon className="w-4 h-4 inline" />
                   </span>{" "}
-                  <p>Mon github</p>
+                  <p>Github</p>
                   <ArrowUpRight className="w-4 h-4 inline animate-bounce text-[#000000]" />
                 </Button>
               </Link>
@@ -182,7 +182,7 @@ export default function Accueil() {
                   <span className=" font-medium">
                     <DiscordIcon className="w-4 h-4 inline" />
                   </span>{" "}
-                  <p>Mon discord</p>
+                  <p>Discord</p>
                   <ArrowUpRight className="w-4 h-4 inline animate-bounce text-[#000000]" />
                 </Button>
               </Link>
