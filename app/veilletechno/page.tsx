@@ -19,6 +19,10 @@ const veilleTechno = [
     id: 3,
     title: "RUST vs C++",
   },
+  {
+    id: 4,
+    title: "Coolify : un outil de monitoring pour Docker",
+  },
 ];
 
 export default function Projets() {
