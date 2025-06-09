@@ -251,8 +251,8 @@ export default function Projets() {
         <div className="mb-4 p-4 bg-gray-100 rounded-lg">
           <p>1️⃣ Gérer le patrimoine informatique</p>
           <p>
-            2️⃣ Répondre aux incidents et aux demandes d'assistance et
-            d'évolution
+            2️⃣ Répondre aux incidents et aux demandes d&apos;assistance et
+            d&apos;évolution
           </p>
           <p>
             3️⃣ Mettre à disposition des utilisateurs un service informatique

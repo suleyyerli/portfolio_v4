@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import OptimizedImage from "@/components/OptimizedImage";
 
 export default function Projet1() {
   const [content, setContent] = useState("");
@@ -21,11 +22,12 @@ export default function Projet1() {
                 ? src
                 : `/markdown/veille/Article1/img/${src?.replace("img/", "")}`;
               return (
-                <img
+                <OptimizedImage
                   src={imagePath}
                   alt={alt || ""}
-                  className="w-full rounded-lg"
-                  {...props}
+                  width={800}
+                  height={400}
+                  className="rounded-lg"
                 />
               );
             },

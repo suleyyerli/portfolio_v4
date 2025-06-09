@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import OptimizedImage from "@/components/OptimizedImage";
 
 export default function Projet2() {
   const [content, setContent] = useState("");
@@ -38,15 +39,12 @@ export default function Projet2() {
               ].includes(src?.replace("img/", "") || "");
 
               return (
-                <img
+                <OptimizedImage
                   src={imagePath}
                   alt={alt || ""}
-                  className={
-                    isScreenshot
-                      ? "w-[400px] inline-block m-2"
-                      : "w-full rounded-lg"
-                  }
-                  {...props}
+                  width={800}
+                  height={400}
+                  className="rounded-lg"
                 />
               );
             },

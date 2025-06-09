@@ -2,6 +2,7 @@ import React from "react";
 import CustomCard from "./CustomCard";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
+import OptimizedImage from "./OptimizedImage";
 import { GithubIcon } from "@/icons/GithubIcon";
 
 interface CardProjectProps {
@@ -23,11 +24,12 @@ const CardProject: React.FC<CardProjectProps> = ({
   return (
     <div className="relative">
       <CustomCard onClick={onClick} className="cursor-pointer">
-        <img
+        <OptimizedImage
           src={image}
           alt="Project"
+          width={300}
+          height={150}
           className="object-cover rounded-xl"
-          style={{ width: "300px", height: "150px" }}
         />
         <div className="p-4">
           <div className="flex justify-between items-start mb-2">
