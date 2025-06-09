@@ -74,6 +74,19 @@ export default function Header() {
             className="hover:xl:scale-150 transition-all duration-300 border-zinc-900"
           >
             <Link
+              href="/oral"
+              className={`font-bold transition-colors text-[#d1d5db] ${
+                isActivePath("/oral") ? "text-white" : ""
+              }`}
+            >
+              Oral
+            </Link>
+          </Badge>
+          <Badge
+            variant="outline"
+            className="hover:xl:scale-150 transition-all duration-300 border-zinc-900"
+          >
+            <Link
               href="/contact"
               className={`font-bold transition-colors text-[#d1d5db] ${
                 isActivePath("/contact") ? "text-white" : ""
