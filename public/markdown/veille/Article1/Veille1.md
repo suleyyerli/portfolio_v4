@@ -45,5 +45,5 @@ Je ne suis pas très actif sur Twitter, mais Twitter me permet de suivre les gra
 
 - **`Google`** :
 
-Google est un outil très puissant avec des outils de recherche très pratiques. Il faut être curieux.  
+Google aussi avec `les actualités` ou encore simplement les recherches sur le navigateur.
 Je recherche des informations précises ou alors des journaux de presse, comme le `mondeinformatique.com`, `it-connect.fr`, et [Le Monde Cybercriminalité](https://www.lemonde.fr/cybercriminalite/).

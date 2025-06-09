@@ -31,7 +31,7 @@ const CardProject: React.FC<CardProjectProps> = ({
         />
         <div className="p-4">
           <div className="flex justify-between items-start mb-2">
-            <h2 className="text-lg font-medium">{title}</h2>
+            <h2 className="text-md font-medium">{title}</h2>
             {githubUrl && (
               <Link
                 href={githubUrl}

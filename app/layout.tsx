@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   title: "suleyyerli",
   description: "Bienvenue sur mon portfolio",
   keywords:
-    "développeur web, React, Next.js, TypeScript, portfolio, frontend, développement web",
+    "développeur web, React, Next.js, TypeScript, portfolio, SLAM, BTS SIO, SIO, option SLAM",
   authors: [{ name: "Suleyman Suleyyerli" }],
   openGraph: {
-    title: "Portfolio Développeur Web | Expert en React, Next.js et TypeScript",
-    description:
-      "Portfolio professionnel d'un développeur web spécialisé en React, Next.js et TypeScript",
+    title: "Portfolio BTS SIO option SLAM",
+    description: "Portfolio étudiant en BTS SIO option SLAM",
     type: "website",
     locale: "fr_FR",
   },

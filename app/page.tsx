@@ -54,7 +54,7 @@ export default function Accueil() {
             <span className="font-medium text-[#FAFAFA]">ERP</span> 🔧.
             J&apos;aime expérimenter de nouveaux outils et frameworks pour
             affiner mes compétences ⚡. Je suis curieux et j&apos;aime apprendre
-            de nouvelles choses 📚. Actuellement sur Rust ... 🦀
+            de nouvelles choses 🦀.
           </p>
           <div className="flex justify-center mt-2">
             <Button className="bg-zinc-900 text-[#FAFAFA]">
